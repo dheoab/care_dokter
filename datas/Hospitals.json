@@ -1,12 +1,12 @@
 [
   {
     "name": "Mandaya Royal Hospital Puri",
-    "address": "Jl. Metland Boulevard Lot. C-3 Metland Cyber City Puri, RT.001/RW.002, Parung Jaya, Kec. Karang Tengah, Kota Tangerang, Banten 15159",
+    "location": "Jl. Metland Boulevard Lot. C-3 Metland Cyber City Puri, RT.001/RW.002, Parung Jaya, Kec. Karang Tengah, Kota Tangerang, Banten 15159",
     "phoneNumber": "6281119002000"
   },
   {
     "name": "Mandaya Hospital Karawang",
-    "address": "Jl. Arteri Tol Karawang Barat, Teluk Jambe, Sukamakmur, Telukjambe Timur, Kabupaten Karawang, Jawa Barat, 41361",
+    "location": "Jl. Arteri Tol Karawang Barat, Teluk Jambe, Sukamakmur, Telukjambe Timur, Kabupaten Karawang, Jawa Barat, 41361",
     "phoneNumber": "6281113402085"
   }
 ]
