@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Anak",
+    "HospitalId": 1
+  },
+  {
+    "name": "Mata",
+    "HospitalId": 1
+  },
+  {
+    "name": "Gigi",
+    "HospitalId": 2
+  },
+  {
+    "name": "Gizi",
+    "HospitalId": 2
+  }
+]
