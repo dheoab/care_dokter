@@ -1,0 +1,110 @@
+[
+  {
+    "doctorId": 3,
+    "date": "2023-08-31",
+    "hoursId": 85,
+    "schedule": "2023-08-31T14:00:00Z"
+  },
+  {
+    "doctorId": 3,
+    "date": "2023-08-31",
+    "hoursId": 86,
+    "schedule": "2023-08-31T14:10:00Z"
+  },
+  {
+    "doctorId": 3,
+    "date": "2023-08-31",
+    "hoursId": 87,
+    "schedule": "2023-08-31T14:20:00Z"
+  },
+  {
+    "doctorId": 3,
+    "date": "2023-08-31",
+    "hoursId": 88,
+    "schedule": "2023-08-31T14:30:00Z"
+  },
+  {
+    "doctorId": 3,
+    "date": "2023-08-31",
+    "hoursId": 89,
+    "schedule": "2023-08-31T14:40:00Z"
+  },
+  {
+    "doctorId": 3,
+    "date": "2023-08-31",
+    "hoursId": 90,
+    "schedule": "2023-08-31T14:50:00Z"
+  },
+  {
+    "doctorId": 3,
+    "date": "2023-08-31",
+    "hoursId": 91,
+    "schedule": "2023-08-31T15:00:00Z"
+  },
+  {
+    "doctorId": 3,
+    "date": "2023-08-31",
+    "hoursId": 92,
+    "schedule": "2023-08-31T15:10:00Z"
+  },
+  {
+    "doctorId": 3,
+    "date": "2023-08-31",
+    "hoursId": 93,
+    "schedule": "2023-08-31T15:20:00Z"
+  },
+  {
+    "doctorId": 3,
+    "date": "2023-08-31",
+    "hoursId": 94,
+    "schedule": "2023-08-31T15:30:00Z"
+  },
+  {
+    "doctorId": 3,
+    "date": "2023-08-31",
+    "hoursId": 95,
+    "schedule": "2023-08-31T15:40:00Z"
+  },
+  {
+    "doctorId": 3,
+    "date": "2023-08-31",
+    "hoursId": 96,
+    "schedule": "2023-08-31T15:50:00Z"
+  },
+  {
+    "doctorId": 3,
+    "date": "2023-08-31",
+    "hoursId": 97,
+    "schedule": "2023-08-31T16:00:00Z"
+  },
+  {
+    "doctorId": 3,
+    "date": "2023-08-31",
+    "hoursId": 98,
+    "schedule": "2023-08-31T16:10:00Z"
+  },
+  {
+    "doctorId": 3,
+    "date": "2023-08-31",
+    "hoursId": 99,
+    "schedule": "2023-08-31T16:20:00Z"
+  },
+  {
+    "doctorId": 3,
+    "date": "2023-08-31",
+    "hoursId": 100,
+    "schedule": "2023-08-31T16:30:00Z"
+  },
+  {
+    "doctorId": 3,
+    "date": "2023-08-31",
+    "hoursId": 101,
+    "schedule": "2023-08-31T16:40:00Z"
+  },
+  {
+    "doctorId": 3,
+    "date": "2023-08-31",
+    "hoursId": 102,
+    "schedule": "2023-08-31T16:50:00Z"
+  }
+]

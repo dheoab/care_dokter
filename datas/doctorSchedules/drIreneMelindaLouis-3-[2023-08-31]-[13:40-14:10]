@@ -1,0 +1,26 @@
+[
+  {
+    "doctorId": 7,
+    "date": "2023-08-31",
+    "hoursId": 83,
+    "schedule": "2023-08-31T13:40:00Z"
+  },
+  {
+    "doctorId": 7,
+    "date": "2023-08-31",
+    "hoursId": 84,
+    "schedule": "2023-08-31T13:50:00Z"
+  },
+  {
+    "doctorId": 7,
+    "date": "2023-08-31",
+    "hoursId": 85,
+    "schedule": "2023-08-31T14:00:00Z"
+  },
+  {
+    "doctorId": 7,
+    "date": "2023-08-31",
+    "hoursId": 86,
+    "schedule": "2023-08-31T14:10:00Z"
+  }
+]

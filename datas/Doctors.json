@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "SpecializationId": 1,
+    "fristName": "dr. Andy",
+    "lastName": "Sugoro",
+    "title": "Sp. A",
+    "SubSpecializationId": null
+  },
+  {
+    "id": 2,
+    "SpecializationId": 1,
+    "fristName": "dr. Diana",
+    "lastName": "Chandra",
+    "title": "Sp. A",
+    "SubSpecializationId": null
+  },
+  {
+    "id": 3,
+    "SpecializationId": 1,
+    "fristName": "dr. Edward",
+    "lastName": "Surjono",
+    "title": "Sp. A",
+    "SubSpecializationId": null
+  },
+  {
+    "id": 4,
+    "SpecializationId": 1,
+    "fristName": "dr. Fransisca",
+    "lastName": "Handy Agung",
+    "title": "Sp. A, IBCLC",
+    "SubSpecializationId": null
+  },
+  {
+    "id": 5,
+    "SpecializationId": 1,
+    "fristName": "dr. Hardini",
+    "lastName": "Intan Setiawati Mahdi",
+    "title": "Sp. A (K)",
+    "SubSpecializationId": null
+  },
+  {
+    "id": 6,
+    "SpecializationId": 1,
+    "fristName": "dr. Herlina",
+    "lastName": null,
+    "title": "Sp. A",
+    "SubSpecializationId": null
+  },
+  {
+    "id": 7,
+    "SpecializationId": 1,
+    "fristName": "dr. Irene",
+    "lastName": "Melinda Louis",
+    "title": "Sp. A (NON VAKSINASI)",
+    "SubSpecializationId": null
+  },
+  {
+    "id": 8,
+    "SpecializationId": 1,
+    "fristName": "dr. Irene",
+    "lastName": "Melinda Louis",
+    "title": "Sp. A (VAKSINASI)",
+    "SubSpecializationId": null
+  },
+  {
+    "id": 9,
+    "SpecializationId": 1,
+    "fristName": "dr. Suryadi",
+    "lastName": "Susanto",
+    "title": "Sp. A",
+    "SubSpecializationId": null
+  },
+  {
+    "id": 10,
+    "SpecializationId": 1,
+    "fristName": "dr. Tiurma Lisapine",
+    "lastName": "Sugoro",
+    "title": "Sp. A, MSc",
+    "SubSpecializationId": null
+  },
+  {
+    "id": 11,
+    "SpecializationId": 1,
+    "fristName": "dr. Yose",
+    "lastName": "Muliawan Pangestu",
+    "title": "Sp. A",
+    "SubSpecializationId": null
+  },
+  {
+    "id": 12,
+    "SpecializationId": 1,
+    "fristName": "dr. Yuliatmoko",
+    "lastName": "Suryatin",
+    "title": "Sp. A",
+    "SubSpecializationId": null
+  },
+  {
+    "id": 13,
+    "SpecializationId": 2,
+    "fristName": "dr. Josiah",
+    "lastName": "Irma",
+    "title": "Sp. M",
+    "SubSpecializationId": null
+  },
+  {
+    "id": 14,
+    "SpecializationId": 2,
+    "fristName": "dr. Naomi",
+    "lastName": "Patioran",
+    "title": "Sp. M",
+    "SubSpecializationId": null
+  },
+  {
+    "id": 15,
+    "SpecializationId": 3,
+    "fristName": "drg. Linarsih",
+    "lastName": null,
+    "title": null,
+    "SubSpecializationId": null
+  },
+  {
+    "id": 16,
+    "SpecializationId": 3,
+    "fristName": "drg. Melissa",
+    "lastName": "Febriany Yokohadinata",
+    "title": null,
+    "SubSpecializationId": null
+  },
+  {
+    "id": 17,
+    "SpecializationId": 3,
+    "fristName": "drg. Michael",
+    "lastName": "Bing",
+    "title": null,
+    "SubSpecializationId": null
+  },
+  {
+    "id": 18,
+    "SpecializationId": 3,
+    "fristName": "drg. Sara",
+    "lastName": "Stefany",
+    "title": null,
+    "SubSpecializationId": null
+  },
+  {
+    "id": 19,
+    "SpecializationId": 4,
+    "fristName": "dr. Elita",
+    "lastName": "Marintan",
+    "title": "S,M.Gizi",
+    "SubSpecializationId": null
+  },
+  {
+    "id": 20,
+    "SpecializationId": 4,
+    "fristName": "dr. Yolin",
+    "lastName": "Marlisa",
+    "title": "S,M.Gizi",
+    "SubSpecializationId": null
+  },
+  {
+    "id": 21,
+    "SpecializationId": 4,
+    "fristName": "dr. Yosua",
+    "lastName": "Yan Kristian",
+    "title": "Sp.GK",
+    "SubSpecializationId": null
+  }
+]
