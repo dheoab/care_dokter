@@ -15,7 +15,7 @@ function generateTimeInterval(intervalMinutes, numIntervals) {
   return timeIntervals;
 }
 
-const intervalMinutes = 10;
+const intervalMinutes = 5;
 const numIntervals = (24 * 60) / intervalMinutes;
 
 const jsonTimeIntervals = generateTimeInterval(intervalMinutes, numIntervals);

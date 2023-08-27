@@ -1,0 +1,50 @@
+[
+  {
+    "doctorId": 1,
+    "date": "2023-08-28",
+    "hoursId": 121,
+    "schedule": "2023-08-28T10:00:00Z"
+  },
+  {
+    "doctorId": 1,
+    "date": "2023-08-28",
+    "hoursId": 127,
+    "schedule": "2023-08-28T10:30:00Z"
+  },
+  {
+    "doctorId": 1,
+    "date": "2023-08-28",
+    "hoursId": 133,
+    "schedule": "2023-08-28T11:00:00Z"
+  },
+  {
+    "doctorId": 1,
+    "date": "2023-08-28",
+    "hoursId": 139,
+    "schedule": "2023-08-28T11:30:00Z"
+  },
+  {
+    "doctorId": 1,
+    "date": "2023-08-28",
+    "hoursId": 145,
+    "schedule": "2023-08-28T12:00:00Z"
+  },
+  {
+    "doctorId": 1,
+    "date": "2023-08-28",
+    "hoursId": 151,
+    "schedule": "2023-08-28T12:30:00Z"
+  },
+  {
+    "doctorId": 1,
+    "date": "2023-08-28",
+    "hoursId": 157,
+    "schedule": "2023-08-28T13:00:00Z"
+  },
+  {
+    "doctorId": 1,
+    "date": "2023-08-28",
+    "hoursId": 163,
+    "schedule": "2023-08-28T13:30:00Z"
+  }
+]

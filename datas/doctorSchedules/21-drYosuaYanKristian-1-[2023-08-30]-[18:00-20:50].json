@@ -1,0 +1,110 @@
+[
+  {
+    "doctorId": 21,
+    "date": "2023-08-30",
+    "hoursId": 217,
+    "schedule": "2023-08-30T18:00:00Z"
+  },
+  {
+    "doctorId": 21,
+    "date": "2023-08-30",
+    "hoursId": 219,
+    "schedule": "2023-08-30T18:10:00Z"
+  },
+  {
+    "doctorId": 21,
+    "date": "2023-08-30",
+    "hoursId": 221,
+    "schedule": "2023-08-30T18:20:00Z"
+  },
+  {
+    "doctorId": 21,
+    "date": "2023-08-30",
+    "hoursId": 223,
+    "schedule": "2023-08-30T18:30:00Z"
+  },
+  {
+    "doctorId": 21,
+    "date": "2023-08-30",
+    "hoursId": 225,
+    "schedule": "2023-08-30T18:40:00Z"
+  },
+  {
+    "doctorId": 21,
+    "date": "2023-08-30",
+    "hoursId": 227,
+    "schedule": "2023-08-30T18:50:00Z"
+  },
+  {
+    "doctorId": 21,
+    "date": "2023-08-30",
+    "hoursId": 229,
+    "schedule": "2023-08-30T19:00:00Z"
+  },
+  {
+    "doctorId": 21,
+    "date": "2023-08-30",
+    "hoursId": 231,
+    "schedule": "2023-08-30T19:10:00Z"
+  },
+  {
+    "doctorId": 21,
+    "date": "2023-08-30",
+    "hoursId": 233,
+    "schedule": "2023-08-30T19:20:00Z"
+  },
+  {
+    "doctorId": 21,
+    "date": "2023-08-30",
+    "hoursId": 235,
+    "schedule": "2023-08-30T19:30:00Z"
+  },
+  {
+    "doctorId": 21,
+    "date": "2023-08-30",
+    "hoursId": 237,
+    "schedule": "2023-08-30T19:40:00Z"
+  },
+  {
+    "doctorId": 21,
+    "date": "2023-08-30",
+    "hoursId": 239,
+    "schedule": "2023-08-30T19:50:00Z"
+  },
+  {
+    "doctorId": 21,
+    "date": "2023-08-30",
+    "hoursId": 241,
+    "schedule": "2023-08-30T20:00:00Z"
+  },
+  {
+    "doctorId": 21,
+    "date": "2023-08-30",
+    "hoursId": 243,
+    "schedule": "2023-08-30T20:10:00Z"
+  },
+  {
+    "doctorId": 21,
+    "date": "2023-08-30",
+    "hoursId": 245,
+    "schedule": "2023-08-30T20:20:00Z"
+  },
+  {
+    "doctorId": 21,
+    "date": "2023-08-30",
+    "hoursId": 247,
+    "schedule": "2023-08-30T20:30:00Z"
+  },
+  {
+    "doctorId": 21,
+    "date": "2023-08-30",
+    "hoursId": 249,
+    "schedule": "2023-08-30T20:40:00Z"
+  },
+  {
+    "doctorId": 21,
+    "date": "2023-08-30",
+    "hoursId": 251,
+    "schedule": "2023-08-30T20:50:00Z"
+  }
+]

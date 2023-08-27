@@ -68,7 +68,7 @@ function scheduleGenerator(
   let formattedName = doctorName.replace(/[. ]/g, "");
 
   const folderPath = "../datas/doctorSchedules";
-  const fileName = `${formattedName}-${session}-[${date}]-[${hourStart}-${hourEnd}].json`;
+  const fileName = `${doctorId}-${formattedName}-${session}-[${date}]-[${hourStart}-${hourEnd}].json`;
 
   const filePath = `${folderPath}/${fileName}`;
 
@@ -85,7 +85,7 @@ function scheduleGenerator(
   return schedules;
 }
 
-//Dokter Edward Surjono ID 3
+// Dokter Edward Surjono ID 3
 
 // scheduleGenerator("2023-08-29", 3, "16:00", "17:50", 1, 10);
 
@@ -184,3 +184,109 @@ function scheduleGenerator(
 // scheduleGenerator("2023-08-30", id, "17:00", "19:45", 1, interval);
 
 // scheduleGenerator("2023-09-02", id, "12:00", "14:45", 1, interval);
+
+// const id = 1;
+// const interval = 30;
+
+// scheduleGenerator("2023-08-28", id, "10:00", "13:30", 1, interval);
+
+// scheduleGenerator("2023-08-29", id, "10:00", "13:30", 1, interval);
+
+// scheduleGenerator("2023-09-30", id, "10:00", "13:30", 1, interval);
+
+// const id = 2;
+// const interval = 20;
+
+// scheduleGenerator("2023-08-28", id, "08:30", "11:30", 1, interval);
+// scheduleGenerator("2023-08-28", id, "13:00", "15:40", 2, interval);
+
+// scheduleGenerator("2023-08-29", id, "08:30", "11:30", 1, interval);
+// scheduleGenerator("2023-08-29", id, "13:00", "15:40", 2, interval);
+
+// scheduleGenerator("2023-08-30", id, "08:30", "11:30", 1, interval);
+// scheduleGenerator("2023-08-30", id, "13:00", "15:40", 2, interval);
+
+// const id = 13;
+// const interval = 15;
+
+// scheduleGenerator("2023-08-31", id, "09:00", "11:45", 1, interval);
+
+// scheduleGenerator("2023-09-07", id, "09:00", "11:45", 1, interval);
+
+// scheduleGenerator("2023-09-14", id, "09:00", "11:45", 1, interval);
+
+// const id = 14;
+// const interval = 20;
+
+// scheduleGenerator("2023-08-29", id, "09:00", "11:40", 1, interval);
+// scheduleGenerator("2023-08-29", id, "13:00", "16:40", 2, interval);
+
+// scheduleGenerator("2023-08-30", id, "13:00", "16:40", 1, interval);
+
+// scheduleGenerator("2023-09-01", id, "09:00", "11:40", 1, interval);
+// scheduleGenerator("2023-09-01", id, "13:00", "16:40", 2, interval);
+
+// const id = 15;
+// const interval = 30;
+
+// scheduleGenerator("2023-08-29", id, "17:00", "19:30", 1, interval);
+
+// scheduleGenerator("2023-09-01", id, "17:00", "19:40", 1, 20);
+
+// scheduleGenerator("2023-09-05", id, "17:00", "19:30", 1, interval);
+
+// const id = 16;
+// const interval = 30;
+
+// scheduleGenerator("2023-08-28", id, "09:00", "11:30", 1, interval);
+// scheduleGenerator("2023-08-28", id, "17:00", "19:30", 2, interval);
+
+// scheduleGenerator("2023-08-29", id, "09:00", "11:30", 1, interval);
+
+// scheduleGenerator("2023-08-30", id, "09:00", "11:30", 1, interval);
+// scheduleGenerator("2023-08-30", id, "17:00", "19:30", 2, interval);
+
+// const id = 17;
+// const interval = 30;
+
+// scheduleGenerator("2023-08-28", id, "12:00", "16:30", 1, interval);
+
+// scheduleGenerator("2023-08-29", id, "12:00", "16:30", 1, interval);
+
+// scheduleGenerator("2023-08-30", id, "12:00", "16:30", 1, interval);
+
+// const id = 18;
+// const interval = 30;
+
+// scheduleGenerator("2023-08-31", id, "13:00", "16:30", 1, interval);
+
+// scheduleGenerator("2023-09-07", id, "13:00", "16:30", 1, interval);
+
+// scheduleGenerator("2023-09-14", id, "13:00", "16:30", 1, interval);
+
+// const id = 19;
+// const interval = 10;
+
+// scheduleGenerator("2023-08-28", id, "13:00", "14:50", 1, interval);
+
+// scheduleGenerator("2023-08-29", id, "08:00", "14:50", 1, interval);
+
+// scheduleGenerator("2023-08-30", id, "08:00", "14:50", 1, interval);
+
+// const id = 20;
+// const interval = 10;
+
+// scheduleGenerator("2023-08-28", id, "09:00", "11:50", 1, interval);
+
+// scheduleGenerator("2023-09-04", id, "09:00", "11:50", 1, interval);
+
+// scheduleGenerator("2023-09-11", id, "09:00", "11:50", 1, interval);
+
+// const id = 21;
+// const interval = 10;
+
+// scheduleGenerator("2023-08-28", id, "18:00", "20:50", 1, interval);
+
+// scheduleGenerator("2023-08-29", id, "16:00", "20:50", 1, interval);
+
+// scheduleGenerator("2023-08-30", id, "18:00", "20:50", 1, interval);

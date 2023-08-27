@@ -1,0 +1,74 @@
+[
+  {
+    "doctorId": 10,
+    "date": "2023-09-01",
+    "hoursId": 181,
+    "schedule": "2023-09-01T15:00:00Z"
+  },
+  {
+    "doctorId": 10,
+    "date": "2023-09-01",
+    "hoursId": 183,
+    "schedule": "2023-09-01T15:10:00Z"
+  },
+  {
+    "doctorId": 10,
+    "date": "2023-09-01",
+    "hoursId": 185,
+    "schedule": "2023-09-01T15:20:00Z"
+  },
+  {
+    "doctorId": 10,
+    "date": "2023-09-01",
+    "hoursId": 187,
+    "schedule": "2023-09-01T15:30:00Z"
+  },
+  {
+    "doctorId": 10,
+    "date": "2023-09-01",
+    "hoursId": 189,
+    "schedule": "2023-09-01T15:40:00Z"
+  },
+  {
+    "doctorId": 10,
+    "date": "2023-09-01",
+    "hoursId": 191,
+    "schedule": "2023-09-01T15:50:00Z"
+  },
+  {
+    "doctorId": 10,
+    "date": "2023-09-01",
+    "hoursId": 193,
+    "schedule": "2023-09-01T16:00:00Z"
+  },
+  {
+    "doctorId": 10,
+    "date": "2023-09-01",
+    "hoursId": 195,
+    "schedule": "2023-09-01T16:10:00Z"
+  },
+  {
+    "doctorId": 10,
+    "date": "2023-09-01",
+    "hoursId": 197,
+    "schedule": "2023-09-01T16:20:00Z"
+  },
+  {
+    "doctorId": 10,
+    "date": "2023-09-01",
+    "hoursId": 199,
+    "schedule": "2023-09-01T16:30:00Z"
+  },
+  {
+    "doctorId": 10,
+    "date": "2023-09-01",
+    "hoursId": 201,
+    "schedule": "2023-09-01T16:40:00Z"
+  },
+  {
+    "doctorId": 10,
+    "date": "2023-09-01",
+    "hoursId": 203,
+    "schedule": "2023-09-01T16:50:00Z"
+  }
+]
