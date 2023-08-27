@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
   }
   Hours.init(
     {
-      clocking: DataTypes.DATE,
+      clocking: DataTypes.STRING,
     },
     {
       sequelize,
