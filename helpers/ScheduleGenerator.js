@@ -68,7 +68,7 @@ function scheduleGenerator(
   let formattedName = doctorName.replace(/[. ]/g, "");
 
   const folderPath = "../datas/doctorSchedules";
-  const fileName = `${formattedName}-${session}-[${date}]-[${hourStart}-${hourEnd}]`;
+  const fileName = `${formattedName}-${session}-[${date}]-[${hourStart}-${hourEnd}].json`;
 
   const filePath = `${folderPath}/${fileName}`;
 
