@@ -1,0 +1,810 @@
+[
+  {
+    "DoctorId": 1,
+    "day": "Monday",
+    "shift": 1,
+    "startShift": "10:00",
+    "endShift": "13:00",
+    "practiceDuration": "00:30:00"
+  },
+  {
+    "DoctorId": 1,
+    "day": "Tuesday",
+    "shift": 1,
+    "startShift": "10:00",
+    "endShift": "13:00",
+    "practiceDuration": "00:30:00"
+  },
+  {
+    "DoctorId": 1,
+    "day": "Wednesday",
+    "shift": 1,
+    "startShift": "10:00",
+    "endShift": "13:00",
+    "practiceDuration": "00:30:00"
+  },
+  {
+    "DoctorId": 1,
+    "day": "Thursday",
+    "shift": 1,
+    "startShift": "10:00",
+    "endShift": "13:00",
+    "practiceDuration": "00:30:00"
+  },
+  {
+    "DoctorId": 1,
+    "day": "Friday",
+    "shift": 1,
+    "startShift": "10:00",
+    "endShift": "13:00",
+    "practiceDuration": "00:30:00"
+  },
+  {
+    "DoctorId": 1,
+    "day": "Saturday",
+    "shift": 1,
+    "startShift": "10:00",
+    "endShift": "13:00",
+    "practiceDuration": "00:30:00"
+  },
+  {
+    "DoctorId": 2,
+    "day": "Monday",
+    "shift": 1,
+    "startShift": "08:30",
+    "endShift": "12:00",
+    "practiceDuration": "00:20:00"
+  },
+  {
+    "DoctorId": 2,
+    "day": "Tuesday",
+    "shift": 1,
+    "startShift": "08:30",
+    "endShift": "12:00",
+    "practiceDuration": "00:20:00"
+  },
+  {
+    "DoctorId": 2,
+    "day": "Wednesday",
+    "shift": 1,
+    "startShift": "08:30",
+    "endShift": "12:00",
+    "practiceDuration": "00:20:00"
+  },
+  {
+    "DoctorId": 2,
+    "day": "Thursday",
+    "shift": 1,
+    "startShift": "08:30",
+    "endShift": "12:00",
+    "practiceDuration": "00:20:00"
+  },
+  {
+    "DoctorId": 2,
+    "day": "Friday",
+    "shift": 1,
+    "startShift": "08:30",
+    "endShift": "12:00",
+    "practiceDuration": "00:20:00"
+  },
+  {
+    "DoctorId": 2,
+    "day": "Saturday",
+    "shift": 1,
+    "startShift": "08:30",
+    "endShift": "12:00",
+    "practiceDuration": "00:20:00"
+  },
+  {
+    "DoctorId": 2,
+    "day": "Monday",
+    "shift": 2,
+    "startShift": "13:00",
+    "endShift": "16:00",
+    "practiceDuration": "00:20:00"
+  },
+  {
+    "DoctorId": 2,
+    "day": "Tuesday",
+    "shift": 2,
+    "startShift": "13:00",
+    "endShift": "16:00",
+    "practiceDuration": "00:20:00"
+  },
+  {
+    "DoctorId": 2,
+    "day": "Wednesday",
+    "shift": 2,
+    "startShift": "13:00",
+    "endShift": "16:00",
+    "practiceDuration": "00:20:00"
+  },
+  {
+    "DoctorId": 2,
+    "day": "Thursday",
+    "shift": 2,
+    "startShift": "13:00",
+    "endShift": "16:00",
+    "practiceDuration": "00:20:00"
+  },
+  {
+    "DoctorId": 2,
+    "day": "Friday",
+    "shift": 2,
+    "startShift": "13:00",
+    "endShift": "16:00",
+    "practiceDuration": "00:20:00"
+  },
+  {
+    "DoctorId": 2,
+    "day": "Saturday",
+    "shift": 2,
+    "startShift": "13:00",
+    "endShift": "16:00",
+    "practiceDuration": "00:20:00"
+  },
+  {
+    "DoctorId": 3,
+    "day": "Monday",
+    "shift": 1,
+    "startShift": "13:00",
+    "endShift": "16:00",
+    "practiceDuration": "00:10:00"
+  },
+  {
+    "DoctorId": 3,
+    "day": "Tuesday",
+    "shift": 1,
+    "startShift": "16:00",
+    "endShift": "18:00",
+    "practiceDuration": "00:10:00"
+  },
+  {
+    "DoctorId": 3,
+    "day": "Wednesday",
+    "shift": 1,
+    "startShift": "08:00",
+    "endShift": "12:00",
+    "practiceDuration": "00:10:00"
+  },
+  {
+    "DoctorId": 3,
+    "day": "Thursday",
+    "shift": 1,
+    "startShift": "14:00",
+    "endShift": "17:00",
+    "practiceDuration": "00:10:00"
+  },
+  {
+    "DoctorId": 3,
+    "day": "Friday",
+    "shift": 1,
+    "startShift": "14:00",
+    "endShift": "17:00",
+    "practiceDuration": "00:10:00"
+  },
+  {
+    "DoctorId": 4,
+    "day": "Tuesday",
+    "shift": 1,
+    "startShift": "14:00",
+    "endShift": "17:00",
+    "practiceDuration": "00:15:00"
+  },
+  {
+    "DoctorId": 4,
+    "day": "Saturday",
+    "shift": 1,
+    "startShift": "09:00",
+    "endShift": "13:00",
+    "practiceDuration": "00:15:00"
+  },
+  {
+    "DoctorId": 4,
+    "day": "Saturday",
+    "shift": 2,
+    "startShift": "14:30",
+    "endShift": "15:00",
+    "practiceDuration": "00:15:00"
+  },
+  {
+    "DoctorId": 5,
+    "day": "Saturday",
+    "shift": 1,
+    "startShift": "09:00",
+    "endShift": "11:00",
+    "practiceDuration": "00:30:00"
+  },
+  {
+    "DoctorId": 6,
+    "day": "Monday",
+    "shift": 1,
+    "startShift": "11:30",
+    "endShift": "14:00",
+    "practiceDuration": "00:15:00"
+  },
+  {
+    "DoctorId": 6,
+    "day": "Tuesday",
+    "shift": 1,
+    "startShift": "11:30",
+    "endShift": "14:00",
+    "practiceDuration": "00:15:00"
+  },
+  {
+    "DoctorId": 6,
+    "day": "Thursday",
+    "shift": 1,
+    "startShift": "17:00",
+    "endShift": "19:00",
+    "practiceDuration": "00:15:00"
+  },
+  {
+    "DoctorId": 6,
+    "day": "Friday",
+    "shift": 1,
+    "startShift": "11:30",
+    "endShift": "14:00",
+    "practiceDuration": "00:15:00"
+  },
+  {
+    "DoctorId": 6,
+    "day": "Saturday",
+    "shift": 1,
+    "startShift": "14:30",
+    "endShift": "16:30",
+    "practiceDuration": "00:15:00"
+  },
+  {
+    "DoctorId": 7,
+    "day": "Monday",
+    "shift": 1,
+    "startShift": "18:00",
+    "endShift": "18:40",
+    "practiceDuration": "00:10:00"
+  },
+  {
+    "DoctorId": 7,
+    "day": "Monday",
+    "shift": 2,
+    "startShift": "19:20",
+    "endShift": "20:00",
+    "practiceDuration": "00:10:00"
+  },
+  {
+    "DoctorId": 7,
+    "day": "Thursday",
+    "shift": 1,
+    "startShift": "11:00",
+    "endShift": "11:40",
+    "practiceDuration": "00:10:00"
+  },
+  {
+    "DoctorId": 7,
+    "day": "Thursday",
+    "shift": 2,
+    "startShift": "12:20",
+    "endShift": "13:00",
+    "practiceDuration": "00:10:00"
+  },
+  {
+    "DoctorId": 7,
+    "day": "Thursday",
+    "shift": 3,
+    "startShift": "13:40",
+    "endShift": "14:20",
+    "practiceDuration": "00:10:00"
+  },
+  {
+    "DoctorId": 7,
+    "day": "Thursday",
+    "shift": 4,
+    "startShift": "15:00",
+    "endShift": "15:40",
+    "practiceDuration": "00:10:00"
+  },
+  {
+    "DoctorId": 7,
+    "day": "Thursday",
+    "shift": 5,
+    "startShift": "16:20",
+    "endShift": "17:00",
+    "practiceDuration": "00:10:00"
+  },
+  {
+    "DoctorId": 8,
+    "day": "Monday",
+    "shift": 1,
+    "startShift": "18:40",
+    "endShift": "19:20",
+    "practiceDuration": "00:10:00"
+  },
+  {
+    "DoctorId": 8,
+    "day": "Thursday",
+    "shift": 1,
+    "startShift": "11:40",
+    "endShift": "12:20",
+    "practiceDuration": "00:10:00"
+  },
+  {
+    "DoctorId": 8,
+    "day": "Thursday",
+    "shift": 2,
+    "startShift": "13:90",
+    "endShift": "13:40",
+    "practiceDuration": "00:10:00"
+  },
+  {
+    "DoctorId": 8,
+    "day": "Thursday",
+    "shift": 3,
+    "startShift": "14:20",
+    "endShift": "15:00",
+    "practiceDuration": "00:10:00"
+  },
+  {
+    "DoctorId": 9,
+    "day": "Monday",
+    "shift": 1,
+    "startShift": "18:00",
+    "endShift": "20:00",
+    "practiceDuration": "00:15:00"
+  },
+  {
+    "DoctorId": 9,
+    "day": "Tuesday",
+    "shift": 1,
+    "startShift": "08:00",
+    "endShift": "10:00",
+    "practiceDuration": "00:15:00"
+  },
+  {
+    "DoctorId": 9,
+    "day": "Tuesday",
+    "shift": 2,
+    "startShift": "16:00",
+    "endShift": "20:00",
+    "practiceDuration": "00:15:00"
+  },
+  {
+    "DoctorId": 9,
+    "day": "Wednesday",
+    "shift": 1,
+    "startShift": "16:00",
+    "endShift": "20:00",
+    "practiceDuration": "00:15:00"
+  },
+  {
+    "DoctorId": 9,
+    "day": "Thursday",
+    "shift": 1,
+    "startShift": "08:00",
+    "endShift": "10:00",
+    "practiceDuration": "00:15:00"
+  },
+  {
+    "DoctorId": 9,
+    "day": "Thursday",
+    "shift": 2,
+    "startShift": "18:00",
+    "endShift": "20:00",
+    "practiceDuration": "00:15:00"
+  },
+  {
+    "DoctorId": 9,
+    "day": "Friday",
+    "shift": 1,
+    "startShift": "08:00",
+    "endShift": "10:00",
+    "practiceDuration": "00:15:00"
+  },
+  {
+    "DoctorId": 9,
+    "day": "Friday",
+    "shift": 2,
+    "startShift": "18:00",
+    "endShift": "20:00",
+    "practiceDuration": "00:15:00"
+  },
+  {
+    "DoctorId": 9,
+    "day": "Saturday",
+    "shift": 1,
+    "startShift": "17:00",
+    "endShift": "20:00",
+    "practiceDuration": "00:15:00"
+  },
+  {
+    "DoctorId": 10,
+    "day": "Monday",
+    "shift": 1,
+    "startShift": "17:00",
+    "endShift": "20:00",
+    "practiceDuration": "00:10:00"
+  },
+  {
+    "DoctorId": 10,
+    "day": "Tuesday",
+    "shift": 1,
+    "startShift": "13:00",
+    "endShift": "16:00",
+    "practiceDuration": "00:10:00"
+  },
+  {
+    "DoctorId": 10,
+    "day": "Saturday",
+    "shift": 1,
+    "startShift": "13:00",
+    "endShift": "16:00",
+    "practiceDuration": "00:10:00"
+  },
+  {
+    "DoctorId": 10,
+    "day": "Wednesday",
+    "shift": 1,
+    "startShift": "08:00",
+    "endShift": "12:00",
+    "practiceDuration": "00:10:00"
+  },
+  {
+    "DoctorId": 10,
+    "day": "Wednesday",
+    "shift": 2,
+    "startShift": "17:00",
+    "endShift": "20:00",
+    "practiceDuration": "00:10:00"
+  },
+  {
+    "DoctorId": 10,
+    "day": "Friday",
+    "shift": 1,
+    "startShift": "15:00",
+    "endShift": "17:00",
+    "practiceDuration": "00:10:00"
+  },
+  {
+    "DoctorId": 11,
+    "day": "Monday",
+    "shift": 1,
+    "startShift": "12:00",
+    "endShift": "20:00",
+    "practiceDuration": "00:15:00"
+  },
+  {
+    "DoctorId": 11,
+    "day": "Wednesday",
+    "shift": 1,
+    "startShift": "14:00",
+    "endShift": "16:00",
+    "practiceDuration": "00:15:00"
+  },
+  {
+    "DoctorId": 11,
+    "day": "Thursday",
+    "shift": 1,
+    "startShift": "14:00",
+    "endShift": "19:00",
+    "practiceDuration": "00:15:00"
+  },
+  {
+    "DoctorId": 11,
+    "day": "Friday",
+    "shift": 1,
+    "startShift": "17:00",
+    "endShift": "20:00",
+    "practiceDuration": "00:15:00"
+  },
+  {
+    "DoctorId": 12,
+    "day": "Monday",
+    "shift": 1,
+    "startShift": "17:00",
+    "endShift": "20:00",
+    "practiceDuration": "00:15:00"
+  },
+  {
+    "DoctorId": 12,
+    "day": "Wednesday",
+    "shift": 1,
+    "startShift": "17:00",
+    "endShift": "20:00",
+    "practiceDuration": "00:15:00"
+  },
+  {
+    "DoctorId": 12,
+    "day": "Saturday",
+    "shift": 1,
+    "startShift": "12:00",
+    "endShift": "15:00",
+    "practiceDuration": "00:15:00"
+  },
+  {
+    "DoctorId": 13,
+    "day": "Thursday",
+    "shift": 1,
+    "startShift": "09:00",
+    "endShift": "12:00",
+    "practiceDuration": "00:15:00"
+  },
+  {
+    "DoctorId": 14,
+    "day": "Tuesday",
+    "shift": 1,
+    "startShift": "09:00",
+    "endShift": "12:00",
+    "practiceDuration": "00:15:00"
+  },
+  {
+    "DoctorId": 14,
+    "day": "Friday",
+    "shift": 1,
+    "startShift": "09:00",
+    "endShift": "12:00",
+    "practiceDuration": "00:15:00"
+  },
+  {
+    "DoctorId": 14,
+    "day": "Wednesday",
+    "shift": 1,
+    "startShift": "13:00",
+    "endShift": "17:00",
+    "practiceDuration": "00:20:00"
+  },
+  {
+    "DoctorId": 14,
+    "day": "Tuesday",
+    "shift": 2,
+    "startShift": "13:00",
+    "endShift": "17:00",
+    "practiceDuration": "00:20:00"
+  },
+  {
+    "DoctorId": 14,
+    "day": "Friday",
+    "shift": 2,
+    "startShift": "13:00",
+    "endShift": "17:00",
+    "practiceDuration": "00:20:00"
+  },
+  {
+    "DoctorId": 14,
+    "day": "Saturday",
+    "shift": 1,
+    "startShift": "08:00",
+    "endShift": "10:00",
+    "practiceDuration": "00:20:00"
+  },
+  {
+    "DoctorId": 15,
+    "day": "Tuesday",
+    "shift": 1,
+    "startShift": "17:00",
+    "endShift": "20:00",
+    "practiceDuration": "00:30:00"
+  },
+  {
+    "DoctorId": 15,
+    "day": "Friday",
+    "shift": 1,
+    "startShift": "17:00",
+    "endShift": "20:00",
+    "practiceDuration": "00:30:00"
+  },
+  {
+    "DoctorId": 16,
+    "day": "Monday",
+    "shift": 1,
+    "startShift": "09:00",
+    "endShift": "12:00",
+    "practiceDuration": "00:30:00"
+  },
+  {
+    "DoctorId": 16,
+    "day": "Tuesday",
+    "shift": 1,
+    "startShift": "09:00",
+    "endShift": "12:00",
+    "practiceDuration": "00:30:00"
+  },
+  {
+    "DoctorId": 16,
+    "day": "Wednesday",
+    "shift": 1,
+    "startShift": "09:00",
+    "endShift": "12:00",
+    "practiceDuration": "00:30:00"
+  },
+  {
+    "DoctorId": 16,
+    "day": "Friday",
+    "shift": 1,
+    "startShift": "09:00",
+    "endShift": "13:00",
+    "practiceDuration": "00:30:00"
+  },
+  {
+    "DoctorId": 16,
+    "day": "Monday",
+    "shift": 2,
+    "startShift": "17:00",
+    "endShift": "20:00",
+    "practiceDuration": "00:30:00"
+  },
+  {
+    "DoctorId": 16,
+    "day": "Wednesday",
+    "shift": 2,
+    "startShift": "17:00",
+    "endShift": "20:00",
+    "practiceDuration": "00:30:00"
+  },
+  {
+    "DoctorId": 16,
+    "day": "Saturday",
+    "shift": 2,
+    "startShift": "17:00",
+    "endShift": "20:00",
+    "practiceDuration": "00:30:00"
+  },
+  {
+    "DoctorId": 16,
+    "day": "Saturday",
+    "shift": 1,
+    "startShift": "08:00",
+    "endShift": "13:00",
+    "practiceDuration": "00:30:00"
+  },
+  {
+    "DoctorId": 17,
+    "day": "Monday",
+    "shift": 1,
+    "startShift": "12:00",
+    "endShift": "17:00",
+    "practiceDuration": "00:30:00"
+  },
+  {
+    "DoctorId": 17,
+    "day": "Tuesday",
+    "shift": 1,
+    "startShift": "12:00",
+    "endShift": "17:00",
+    "practiceDuration": "00:30:00"
+  },
+  {
+    "DoctorId": 17,
+    "day": "Wednesday",
+    "shift": 1,
+    "startShift": "12:00",
+    "endShift": "17:00",
+    "practiceDuration": "00:30:00"
+  },
+  {
+    "DoctorId": 17,
+    "day": "Saturday",
+    "shift": 1,
+    "startShift": "13:00",
+    "endShift": "17:00",
+    "practiceDuration": "00:30:00"
+  },
+  {
+    "DoctorId": 17,
+    "day": "Thursday",
+    "shift": 1,
+    "startShift": "09:00",
+    "endShift": "12:00",
+    "practiceDuration": "00:30:00"
+  },
+  {
+    "DoctorId": 17,
+    "day": "Thursday",
+    "shift": 2,
+    "startShift": "17:00",
+    "endShift": "20:00",
+    "practiceDuration": "00:30:00"
+  },
+  {
+    "DoctorId": 18,
+    "day": "Thursday",
+    "shift": 1,
+    "startShift": "13:00",
+    "endShift": "17:00",
+    "practiceDuration": "00:30:00"
+  },
+  {
+    "DoctorId": 19,
+    "day": "Monday",
+    "shift": 1,
+    "startShift": "13:00",
+    "endShift": "15:00",
+    "practiceDuration": "00:10:00"
+  },
+  {
+    "DoctorId": 19,
+    "day": "Tuesday",
+    "shift": 1,
+    "startShift": "08:00",
+    "endShift": "15:00",
+    "practiceDuration": "00:10:00"
+  },
+  {
+    "DoctorId": 19,
+    "day": "Wednesday",
+    "shift": 1,
+    "startShift": "08:00",
+    "endShift": "15:00",
+    "practiceDuration": "00:10:00"
+  },
+  {
+    "DoctorId": 19,
+    "day": "Thursday",
+    "shift": 1,
+    "startShift": "08:00",
+    "endShift": "15:00",
+    "practiceDuration": "00:10:00"
+  },
+  {
+    "DoctorId": 19,
+    "day": "Friday",
+    "shift": 1,
+    "startShift": "08:00",
+    "endShift": "15:00",
+    "practiceDuration": "00:10:00"
+  },
+  {
+    "DoctorId": 19,
+    "day": "Saturday",
+    "shift": 1,
+    "startShift": "09:00",
+    "endShift": "15:00",
+    "practiceDuration": "00:10:00"
+  },
+  {
+    "DoctorId": 20,
+    "day": "Monday",
+    "shift": 1,
+    "startShift": "09:00",
+    "endShift": "12:00",
+    "practiceDuration": "00:10:00"
+  },
+  {
+    "DoctorId": 21,
+    "day": "Monday",
+    "shift": 1,
+    "startShift": "18:00",
+    "endShift": "21:00",
+    "practiceDuration": "00:10:00"
+  },
+  {
+    "DoctorId": 21,
+    "day": "Tuesday",
+    "shift": 1,
+    "startShift": "16:00",
+    "endShift": "21:00",
+    "practiceDuration": "00:10:00"
+  },
+  {
+    "DoctorId": 21,
+    "day": "Wednesday",
+    "shift": 1,
+    "startShift": "18:00",
+    "endShift": "21:00",
+    "practiceDuration": "00:10:00"
+  },
+  {
+    "DoctorId": 21,
+    "day": "Thursday",
+    "shift": 1,
+    "startShift": "16:00",
+    "endShift": "21:00",
+    "practiceDuration": "00:10:00"
+  },
+  {
+    "DoctorId": 21,
+    "day": "Friday",
+    "shift": 1,
+    "startShift": "16:00",
+    "endShift": "21:00",
+    "practiceDuration": "00:10:00"
+  }
+]

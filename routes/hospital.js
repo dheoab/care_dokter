@@ -12,4 +12,13 @@ router.get(
   hospitalController.getSearchDoctorbySpecialization
 );
 
+router.get(
+  "/:hospitalId/specializations/:specializationId/doctors",
+  hospitalController.getDoctorBySpecialization
+);
+router.get(
+  "/:hospitalId/specializations/:specializationId/doctors/:doctorId/working-day",
+  hospitalController.getDoctorBySpecializationWorkingDays
+);
+
 module.exports = router;

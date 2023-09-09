@@ -1,9 +1,8 @@
 const {
   Hospital,
   Specialization,
-  SubSpecialization,
   Doctor,
-  Sequelize,
+  WorkingDay,
 } = require("../models/index");
 
 const { Op } = require("sequelize");
@@ -105,6 +104,53 @@ class hospitalController {
   }
   static async getDoctorBySpecialization(req, res, next) {
     try {
+      const { hospitalId, specializationId } = req.params;
+
+      const doctors = await Doctor.findAll({
+        where: {
+          HospitalId: hospitalId,
+          SpecializationId: specializationId,
+        },
+        attributes: {
+          exclude: [
+            "createdAt",
+            "updatedAt",
+            "HospitalId",
+            "SubSpecializationId",
+            "SpecializationId",
+          ],
+        },
+        include: [
+          {
+            model: Specialization,
+            attributes: {
+              exclude: ["createdAt", "updatedAt", "HospitalId", "id"],
+            },
+          },
+        ],
+      });
+      res.status(200).json(doctors);
+    } catch (error) {
+      console.log(error);
+      next(error);
+    }
+  }
+
+  static async getDoctorBySpecializationWorkingDays(req, res, next) {
+    const { doctorId } = req.params;
+
+    console.log(doctorId, "< specializationId");
+    try {
+      const DoctorsWorkingDays = await WorkingDay.findAll({
+        where: {
+          DoctorId: doctorId,
+        },
+        attributes: {
+          exclude: ["createdAt", "updatedAt"],
+        },
+      });
+
+      res.status(200).json(DoctorsWorkingDays);
     } catch (error) {
       console.log(error);
       next(error);
