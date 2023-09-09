@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
       Schedule.hasOne(models.Booking, { foreignKey: "ScheduleId" });
       Schedule.belongsTo(models.Doctor, { foreignKey: "DoctorId" });
-      Schedule.belongsTo(models.Hour, { foreignKey: "HourId" });
+      Schedule.belongsTo(models.Hours, { foreignKey: "HourId" });
     }
   }
   Schedule.init(

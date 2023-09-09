@@ -15,6 +15,9 @@ module.exports = (sequelize, DataTypes) => {
       Doctor.belongsTo(models.SubSpecialization, {
         foreignKey: "SubSpecializationId",
       });
+      Doctor.belongsTo(models.Hospital, {
+        foreignKey: "HospitalId",
+      });
     }
   }
   Doctor.init(
@@ -24,6 +27,7 @@ module.exports = (sequelize, DataTypes) => {
       title: DataTypes.STRING,
       SubSpecializationId: DataTypes.INTEGER,
       SpecializationId: DataTypes.INTEGER,
+      HospitalId: DataTypes.INTEGER,
     },
     {
       sequelize,

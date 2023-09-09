@@ -5,7 +5,8 @@
     "fristName": "dr. Andy",
     "lastName": "Sugoro",
     "title": "Sp. A",
-    "SubSpecializationId": null
+    "SubSpecializationId": null,
+    "HospitalId": 1
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "fristName": "dr. Diana",
     "lastName": "Chandra",
     "title": "Sp. A",
-    "SubSpecializationId": null
+    "SubSpecializationId": null,
+    "HospitalId": 1
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "fristName": "dr. Edward",
     "lastName": "Surjono",
     "title": "Sp. A",
-    "SubSpecializationId": null
+    "SubSpecializationId": null,
+    "HospitalId": 1
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "fristName": "dr. Fransisca",
     "lastName": "Handy Agung",
     "title": "Sp. A, IBCLC",
-    "SubSpecializationId": null
+    "SubSpecializationId": null,
+    "HospitalId": 1
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "fristName": "dr. Hardini",
     "lastName": "Intan Setiawati Mahdi",
     "title": "Sp. A (K)",
-    "SubSpecializationId": null
+    "SubSpecializationId": null,
+    "HospitalId": 1
   },
   {
     "id": 6,
@@ -45,7 +50,8 @@
     "fristName": "dr. Herlina",
     "lastName": null,
     "title": "Sp. A",
-    "SubSpecializationId": null
+    "SubSpecializationId": null,
+    "HospitalId": 1
   },
   {
     "id": 7,
@@ -53,7 +59,8 @@
     "fristName": "dr. Irene",
     "lastName": "Melinda Louis",
     "title": "Sp. A (NON VAKSINASI)",
-    "SubSpecializationId": null
+    "SubSpecializationId": null,
+    "HospitalId": 1
   },
   {
     "id": 8,
@@ -61,7 +68,8 @@
     "fristName": "dr. Irene",
     "lastName": "Melinda Louis",
     "title": "Sp. A (VAKSINASI)",
-    "SubSpecializationId": null
+    "SubSpecializationId": null,
+    "HospitalId": 1
   },
   {
     "id": 9,
@@ -69,7 +77,8 @@
     "fristName": "dr. Suryadi",
     "lastName": "Susanto",
     "title": "Sp. A",
-    "SubSpecializationId": null
+    "SubSpecializationId": null,
+    "HospitalId": 1
   },
   {
     "id": 10,
@@ -77,7 +86,8 @@
     "fristName": "dr. Tiurma Lisapine",
     "lastName": "Sugoro",
     "title": "Sp. A, MSc",
-    "SubSpecializationId": null
+    "SubSpecializationId": null,
+    "HospitalId": 1
   },
   {
     "id": 11,
@@ -85,7 +95,8 @@
     "fristName": "dr. Yose",
     "lastName": "Muliawan Pangestu",
     "title": "Sp. A",
-    "SubSpecializationId": null
+    "SubSpecializationId": null,
+    "HospitalId": 1
   },
   {
     "id": 12,
@@ -93,7 +104,8 @@
     "fristName": "dr. Yuliatmoko",
     "lastName": "Suryatin",
     "title": "Sp. A",
-    "SubSpecializationId": null
+    "SubSpecializationId": null,
+    "HospitalId": 1
   },
   {
     "id": 13,
@@ -101,7 +113,8 @@
     "fristName": "dr. Josiah",
     "lastName": "Irma",
     "title": "Sp. M",
-    "SubSpecializationId": null
+    "SubSpecializationId": null,
+    "HospitalId": 1
   },
   {
     "id": 14,
@@ -109,7 +122,8 @@
     "fristName": "dr. Naomi",
     "lastName": "Patioran",
     "title": "Sp. M",
-    "SubSpecializationId": null
+    "SubSpecializationId": null,
+    "HospitalId": 1
   },
   {
     "id": 15,
@@ -117,7 +131,8 @@
     "fristName": "drg. Linarsih",
     "lastName": null,
     "title": null,
-    "SubSpecializationId": null
+    "SubSpecializationId": null,
+    "HospitalId": 2
   },
   {
     "id": 16,
@@ -125,7 +140,8 @@
     "fristName": "drg. Melissa",
     "lastName": "Febriany Yokohadinata",
     "title": null,
-    "SubSpecializationId": null
+    "SubSpecializationId": null,
+    "HospitalId": 2
   },
   {
     "id": 17,
@@ -133,7 +149,8 @@
     "fristName": "drg. Michael",
     "lastName": "Bing",
     "title": null,
-    "SubSpecializationId": null
+    "SubSpecializationId": null,
+    "HospitalId": 2
   },
   {
     "id": 18,
@@ -141,7 +158,8 @@
     "fristName": "drg. Sara",
     "lastName": "Stefany",
     "title": null,
-    "SubSpecializationId": null
+    "SubSpecializationId": null,
+    "HospitalId": 2
   },
   {
     "id": 19,
@@ -149,7 +167,8 @@
     "fristName": "dr. Elita",
     "lastName": "Marintan",
     "title": "S,M.Gizi",
-    "SubSpecializationId": null
+    "SubSpecializationId": null,
+    "HospitalId": 2
   },
   {
     "id": 20,
@@ -157,7 +176,8 @@
     "fristName": "dr. Yolin",
     "lastName": "Marlisa",
     "title": "S,M.Gizi",
-    "SubSpecializationId": null
+    "SubSpecializationId": null,
+    "HospitalId": 2
   },
   {
     "id": 21,
@@ -165,6 +185,7 @@
     "fristName": "dr. Yosua",
     "lastName": "Yan Kristian",
     "title": "Sp.GK",
-    "SubSpecializationId": null
+    "SubSpecializationId": null,
+    "HospitalId": 2
   }
 ]
