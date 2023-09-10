@@ -1,0 +1,24 @@
+[
+  {
+    "bookingCode": "4170000",
+    "type": "in-person",
+    "date": "2023-09-10",
+    "note": null,
+    "status": "on-going",
+    "UserId": 1,
+    "UserFamilyId": 1,
+    "dateBooked": "2023-09-11T10:30:00.000Z",
+    "WorkingDayId": 1
+  },
+  {
+    "bookingCode": "4170033",
+    "type": "in-person",
+    "date": "2023-09-10",
+    "note": null,
+    "status": "done",
+    "UserId": 1,
+    "UserFamilyId": 1,
+    "dateBooked": "2023-09-17T10:30:00.000Z",
+    "WorkingDayId": 1
+  }
+]

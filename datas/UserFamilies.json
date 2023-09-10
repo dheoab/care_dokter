@@ -1,0 +1,20 @@
+[
+  {
+    "imgKtp": null,
+    "phoneNumber": "08888888888",
+    "familyRelation": "saya sendiri",
+    "frontName": "Abi",
+    "lastName": "Bibi",
+    "sex": "male",
+    "placeOfBirth": "Jakarta",
+    "dateOfBirth": "2000-09-09",
+    "nationality": "indonesian",
+    "identificationNumber": "123456",
+    "education": null,
+    "religion": null,
+    "marriageStatus": null,
+    "occupation": null,
+    "bloodType": "o",
+    "UserId": 1
+  }
+]

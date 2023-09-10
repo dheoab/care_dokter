@@ -1,7 +1,7 @@
 const { User } = require("../models");
 const { verifyToken } = require("../helpers/jwt");
 
-module.exports = async (req, _, next) => {
+const auth = async (req, _, next) => {
   try {
     const { access_token } = req.headers;
     if (!access_token) {
@@ -25,3 +25,5 @@ module.exports = async (req, _, next) => {
     next(error);
   }
 };
+
+module.exports = auth;

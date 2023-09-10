@@ -1,20 +1,15 @@
 "use strict";
 
-let schedules = require("../datas/Schedule.json").map((schedule) => {
-  schedule.updatedAt = schedule.createdAt = new Date();
-  delete schedule.schedule;
-  schedule.HourId = schedule.hoursId;
-  delete schedule.hoursId;
-  schedule.DoctorId = schedule.doctorId;
-  delete schedule.doctorId;
+const bookings = require("../datas/Booking.json").map((booking) => {
+  booking.createdAt = booking.updatedAt = new Date();
 
-  return schedule;
+  return booking;
 });
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.bulkInsert("Schedules", schedules);
+    await queryInterface.bulkInsert("Bookings", bookings);
     /**
      * Add seed commands here.
      *
@@ -27,7 +22,7 @@ module.exports = {
   },
 
   async down(queryInterface, Sequelize) {
-    await queryInterface.bulkDelete("Schedules", null, {});
+    await queryInterface.bulkDelete("Bookings", null, {});
     /**
      * Add commands to revert seed here.
      *

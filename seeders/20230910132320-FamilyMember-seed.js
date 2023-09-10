@@ -1,20 +1,15 @@
 "use strict";
 
-let hours = require("../datas/timeIntervals.json").map((hour) => {
-  hour.createdAt = hour.updatedAt = new Date();
-  hour.clocking = hour.time;
-  delete hour.id;
-  delete hour.time;
+const userFamilies = require("../datas/UserFamilies.json").map((e) => {
+  e.createdAt = e.updatedAt = new Date();
 
-  return hour;
+  return e;
 });
-
-console.log(hours);
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.bulkInsert("Hours", hours);
+    await queryInterface.bulkInsert("UsersFamilies", userFamilies);
     /**
      * Add seed commands here.
      *
@@ -27,7 +22,7 @@ module.exports = {
   },
 
   async down(queryInterface, Sequelize) {
-    await queryInterface.bulkDelete("Hours", null, {});
+    await queryInterface.bulkDelete("UsersFamilies", null, {});
     /**
      * Add commands to revert seed here.
      *

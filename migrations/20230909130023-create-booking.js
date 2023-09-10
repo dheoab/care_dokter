@@ -38,10 +38,13 @@ module.exports = {
           key: "id",
         },
       },
-      ScheduleId: {
+      dateBooked: {
+        type: Sequelize.DATE,
+      },
+      WorkingDayId: {
         type: Sequelize.INTEGER,
         references: {
-          model: "Schedules",
+          model: "WorkingDays",
           key: "id",
         },
       },
