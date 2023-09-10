@@ -6,6 +6,9 @@ const {
   WorkingDay,
 } = require("../models/index");
 
+const transformScheduleData = require("../helpers/doctorWorkingDaysFormater");
+const generateDoctorSchedule = require("../helpers/doctorScheduleFunction");
+
 const { Op } = require("sequelize");
 
 class hospitalController {
@@ -140,7 +143,6 @@ class hospitalController {
   static async getDoctorBySpecializationWorkingDays(req, res, next) {
     const { doctorId } = req.params;
 
-    console.log(doctorId, "< specializationId");
     try {
       const DoctorsWorkingDays = await WorkingDay.findAll({
         where: {
@@ -151,7 +153,9 @@ class hospitalController {
         },
       });
 
-      res.status(200).json(DoctorsWorkingDays);
+      const transformedData = transformScheduleData(DoctorsWorkingDays);
+
+      res.status(200).json(transformedData);
     } catch (error) {
       console.log(error);
       next(error);
@@ -278,6 +282,55 @@ class hospitalController {
         },
       });
       res.status(200).json(doctor);
+    } catch (error) {
+      console.log(error);
+      next(error);
+    }
+  }
+
+  static async getSpecificDoctorSchedule(req, res, next) {
+    try {
+      const { doctorId } = req.params;
+      let { startDate, endDate } = req.query;
+
+      function formatDate(date) {
+        const year = date.getFullYear();
+        const month = String(date.getMonth() + 1).padStart(2, "0");
+        const day = String(date.getDate()).padStart(2, "0");
+
+        return `${year}-${month}-${day}`;
+      }
+
+      if (!startDate) {
+        startDate = formatDate(new Date());
+      }
+      console.log(startDate, "XXXX");
+
+      if (!endDate) {
+        endDate = new Date();
+        endDate.setDate(endDate.getDate() + 7);
+        endDate = formatDate(endDate);
+      }
+      console.log(endDate, "YYY");
+
+      let DoctorsWorkingDays = await WorkingDay.findAll({
+        where: {
+          DoctorId: doctorId,
+        },
+        attributes: {
+          exclude: ["createdAt", "updatedAt"],
+        },
+      });
+
+      DoctorsWorkingDays = transformScheduleData(DoctorsWorkingDays);
+
+      const doctorSchedule = generateDoctorSchedule(
+        DoctorsWorkingDays,
+        startDate,
+        endDate
+      );
+
+      res.status(200).json(doctorSchedule);
     } catch (error) {
       console.log(error);
       next(error);

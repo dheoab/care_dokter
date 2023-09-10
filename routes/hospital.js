@@ -31,4 +31,9 @@ router.get(
   hospitalController.getDoctorBySpecializationWorkingDays
 );
 
+router.get(
+  "/:hospitalId/specializations/:specializationId/doctors/:doctorId/schedules",
+  hospitalController.getSpecificDoctorSchedule
+);
+
 module.exports = router;
