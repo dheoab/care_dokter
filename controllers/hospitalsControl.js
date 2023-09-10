@@ -1,6 +1,7 @@
 const {
   Hospital,
   Specialization,
+  SubSpecialization,
   Doctor,
   WorkingDay,
 } = require("../models/index");
@@ -151,6 +152,68 @@ class hospitalController {
       });
 
       res.status(200).json(DoctorsWorkingDays);
+    } catch (error) {
+      console.log(error);
+      next(error);
+    }
+  }
+
+  static async getFilteredDoctors(req, res, next) {
+    try {
+      const { hospitalId, specializationId } = req.params;
+      const {
+        subspecializationId,
+        practiceDay,
+        practiceTime,
+        practiceType,
+        gender,
+      } = req.query;
+
+      const whereCondition = {
+        HospitalId: hospitalId,
+        SpecializationId: specializationId,
+      };
+
+      if (subspecializationId) {
+        whereCondition.SubSpecializationId = {
+          [Op.in]: subspecializationId.split(","),
+        };
+      }
+
+      if (gender) {
+        whereCondition.gender = {
+          [Op.in]: gender.split(","),
+        };
+      }
+
+      const includeCondition = [
+        {
+          model: Specialization,
+        },
+        {
+          model: SubSpecialization,
+        },
+      ];
+
+      // Conditionally add practiceDay filter(s)
+      if (practiceDay) {
+        const practiceDaysArray = practiceDay.split(",");
+        includeCondition.push({
+          model: WorkingDay,
+          where: {
+            days: {
+              [Op.in]: practiceDaysArray,
+            },
+          },
+        });
+      }
+
+      const doctors = await Doctor.findAll({
+        where: whereCondition,
+        include: includeCondition,
+      });
+
+      res.status(200).json(doctors);
     } catch (error) {
       console.log(error);
       next(error);

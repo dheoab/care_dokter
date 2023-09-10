@@ -6,7 +6,9 @@
     "lastName": "Sugoro",
     "title": "Sp. A",
     "SubSpecializationId": null,
-    "HospitalId": 1
+    "HospitalId": 1,
+    "gender": "male",
+    "imgUrl": null
   },
   {
     "id": 2,
@@ -15,7 +17,9 @@
     "lastName": "Chandra",
     "title": "Sp. A",
     "SubSpecializationId": null,
-    "HospitalId": 1
+    "HospitalId": 1,
+    "gender": "female",
+    "imgUrl": null
   },
   {
     "id": 3,
@@ -24,7 +28,9 @@
     "lastName": "Surjono",
     "title": "Sp. A",
     "SubSpecializationId": null,
-    "HospitalId": 1
+    "HospitalId": 1,
+    "gender": "male",
+    "imgUrl": null
   },
   {
     "id": 4,
@@ -33,7 +39,9 @@
     "lastName": "Handy Agung",
     "title": "Sp. A, IBCLC",
     "SubSpecializationId": null,
-    "HospitalId": 1
+    "HospitalId": 1,
+    "gender": "female",
+    "imgUrl": null
   },
   {
     "id": 5,
@@ -42,7 +50,9 @@
     "lastName": "Intan Setiawati Mahdi",
     "title": "Sp. A (K)",
     "SubSpecializationId": null,
-    "HospitalId": 1
+    "HospitalId": 1,
+    "gender": "female",
+    "imgUrl": null
   },
   {
     "id": 6,
@@ -51,7 +61,9 @@
     "lastName": null,
     "title": "Sp. A",
     "SubSpecializationId": null,
-    "HospitalId": 1
+    "HospitalId": 1,
+    "gender": "female",
+    "imgUrl": null
   },
   {
     "id": 7,
@@ -60,7 +72,9 @@
     "lastName": "Melinda Louis",
     "title": "Sp. A (NON VAKSINASI)",
     "SubSpecializationId": null,
-    "HospitalId": 1
+    "HospitalId": 1,
+    "gender": "female",
+    "imgUrl": null
   },
   {
     "id": 8,
@@ -69,7 +83,9 @@
     "lastName": "Melinda Louis",
     "title": "Sp. A (VAKSINASI)",
     "SubSpecializationId": null,
-    "HospitalId": 1
+    "HospitalId": 1,
+    "gender": "female",
+    "imgUrl": null
   },
   {
     "id": 9,
@@ -78,7 +94,9 @@
     "lastName": "Susanto",
     "title": "Sp. A",
     "SubSpecializationId": null,
-    "HospitalId": 1
+    "HospitalId": 1,
+    "gender": "male",
+    "imgUrl": null
   },
   {
     "id": 10,
@@ -87,7 +105,9 @@
     "lastName": "Sugoro",
     "title": "Sp. A, MSc",
     "SubSpecializationId": null,
-    "HospitalId": 1
+    "HospitalId": 1,
+    "gender": "male",
+    "imgUrl": null
   },
   {
     "id": 11,
@@ -96,7 +116,9 @@
     "lastName": "Muliawan Pangestu",
     "title": "Sp. A",
     "SubSpecializationId": null,
-    "HospitalId": 1
+    "HospitalId": 1,
+    "gender": "male",
+    "imgUrl": null
   },
   {
     "id": 12,
@@ -105,7 +127,9 @@
     "lastName": "Suryatin",
     "title": "Sp. A",
     "SubSpecializationId": null,
-    "HospitalId": 1
+    "HospitalId": 1,
+    "gender": "male",
+    "imgUrl": null
   },
   {
     "id": 13,
@@ -114,7 +138,9 @@
     "lastName": "Irma",
     "title": "Sp. M",
     "SubSpecializationId": null,
-    "HospitalId": 1
+    "HospitalId": 1,
+    "gender": "female",
+    "imgUrl": null
   },
   {
     "id": 14,
@@ -123,7 +149,9 @@
     "lastName": "Patioran",
     "title": "Sp. M",
     "SubSpecializationId": null,
-    "HospitalId": 1
+    "HospitalId": 1,
+    "gender": "female",
+    "imgUrl": null
   },
   {
     "id": 15,
@@ -132,7 +160,9 @@
     "lastName": null,
     "title": null,
     "SubSpecializationId": null,
-    "HospitalId": 2
+    "HospitalId": 2,
+    "gender": "female",
+    "imgUrl": null
   },
   {
     "id": 16,
@@ -141,7 +171,9 @@
     "lastName": "Febriany Yokohadinata",
     "title": null,
     "SubSpecializationId": null,
-    "HospitalId": 2
+    "HospitalId": 2,
+    "gender": "female",
+    "imgUrl": null
   },
   {
     "id": 17,
@@ -150,7 +182,9 @@
     "lastName": "Bing",
     "title": null,
     "SubSpecializationId": null,
-    "HospitalId": 2
+    "HospitalId": 2,
+    "gender": "male",
+    "imgUrl": null
   },
   {
     "id": 18,
@@ -159,7 +193,9 @@
     "lastName": "Stefany",
     "title": null,
     "SubSpecializationId": null,
-    "HospitalId": 2
+    "HospitalId": 2,
+    "gender": "female",
+    "imgUrl": null
   },
   {
     "id": 19,
@@ -168,7 +204,9 @@
     "lastName": "Marintan",
     "title": "S,M.Gizi",
     "SubSpecializationId": null,
-    "HospitalId": 2
+    "HospitalId": 2,
+    "gender": "female",
+    "imgUrl": null
   },
   {
     "id": 20,
@@ -177,7 +215,9 @@
     "lastName": "Marlisa",
     "title": "S,M.Gizi",
     "SubSpecializationId": null,
-    "HospitalId": 2
+    "HospitalId": 2,
+    "gender": "female",
+    "imgUrl": null
   },
   {
     "id": 21,
@@ -186,6 +226,8 @@
     "lastName": "Yan Kristian",
     "title": "Sp.GK",
     "SubSpecializationId": null,
-    "HospitalId": 2
+    "HospitalId": 2,
+    "gender": "male",
+    "imgUrl": null
   }
 ]

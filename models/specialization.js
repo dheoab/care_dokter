@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
       Specialization.belongsTo(models.Hospital, { foreignKey: "HospitalId" });
       Specialization.hasMany(models.SubSpecialization, {
-        foreignKey: "SpecializationID",
+        foreignKey: "SpecializationId",
       });
       Specialization.hasMany(models.Doctor, {
         foreignKey: "SpecializationId",
