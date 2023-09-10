@@ -165,7 +165,7 @@ class hospitalController {
         subspecializationId,
         practiceDay,
         practiceTime,
-        practiceType,
+        telecomunication,
         gender,
       } = req.query;
 
@@ -186,12 +186,21 @@ class hospitalController {
         };
       }
 
+      if (telecomunication) {
+        whereCondition.telecom = {
+          [Op.in]: telecomunication.split(","),
+        };
+      }
+
       const includeCondition = [
         {
           model: Specialization,
         },
         {
           model: SubSpecialization,
+        },
+        {
+          model: WorkingDay,
         },
       ];
 
@@ -208,12 +217,67 @@ class hospitalController {
         });
       }
 
+      // Conditionally add practiceTime filter
+      if (practiceTime) {
+        let startShift, endShift;
+
+        // Determine the time range based on practiceTime
+        switch (practiceTime) {
+          case "morning":
+            startShift = "08:00";
+            endShift = "12:00";
+            break;
+          case "afternoon":
+            startShift = "12:00";
+            endShift = "16:00";
+            break;
+          case "evening":
+            startShift = "16:00";
+            endShift = "20:00";
+            break;
+          default:
+            // Handle invalid practiceTime value here
+            break;
+        }
+
+        // Add the time range to the WorkingDay include
+        includeCondition.push({
+          model: WorkingDay,
+          where: {
+            startShift: {
+              [Op.lte]: endShift,
+            },
+            endShift: {
+              [Op.gte]: startShift,
+            },
+          },
+        });
+      }
+
       const doctors = await Doctor.findAll({
         where: whereCondition,
         include: includeCondition,
       });
 
       res.status(200).json(doctors);
+    } catch (error) {
+      console.log(error);
+      next(error);
+    }
+  }
+
+  static async getSpecificDoctor(req, res, next) {
+    try {
+      const { hospitalId, specializationId, doctorId } = req.params;
+
+      const doctor = await Doctor.findAll({
+        where: {
+          HospitalId: hospitalId,
+          SpecializationId: specializationId,
+          id: doctorId,
+        },
+      });
+      res.status(200).json(doctor);
     } catch (error) {
       console.log(error);
       next(error);

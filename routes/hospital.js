@@ -21,6 +21,11 @@ router.get(
   "/:hospitalId/specializations/:specializationId/filter-doctors/",
   hospitalController.getFilteredDoctors
 );
+
+router.get(
+  "/:hospitalId/specializations/:specializationId/doctors/:doctorId/",
+  hospitalController.getSpecificDoctor
+);
 router.get(
   "/:hospitalId/specializations/:specializationId/doctors/:doctorId/working-day",
   hospitalController.getDoctorBySpecializationWorkingDays

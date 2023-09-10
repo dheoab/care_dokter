@@ -13,7 +13,7 @@ console.log(subSpecialization);
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.bulkInsert("SubSpecialization", subSpecialization);
+    await queryInterface.bulkInsert("SubSpecializations", subSpecialization);
     /**
      * Add seed commands here.
      *
@@ -26,7 +26,7 @@ module.exports = {
   },
 
   async down(queryInterface, Sequelize) {
-    await queryInterface.bulkDelete("SubSpecialization", null, {});
+    await queryInterface.bulkDelete("SubSpecializations", null, {});
     /**
      * Add commands to revert seed here.
      *

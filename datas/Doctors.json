@@ -8,7 +8,8 @@
     "SubSpecializationId": null,
     "HospitalId": 1,
     "gender": "male",
-    "imgUrl": null
+    "imgUrl": null,
+    "telecom": "yes"
   },
   {
     "id": 2,
@@ -19,7 +20,8 @@
     "SubSpecializationId": null,
     "HospitalId": 1,
     "gender": "female",
-    "imgUrl": null
+    "imgUrl": null,
+    "telecom": "yes"
   },
   {
     "id": 3,
@@ -30,7 +32,8 @@
     "SubSpecializationId": null,
     "HospitalId": 1,
     "gender": "male",
-    "imgUrl": null
+    "imgUrl": null,
+    "telecom": "yes"
   },
   {
     "id": 4,
@@ -41,7 +44,8 @@
     "SubSpecializationId": null,
     "HospitalId": 1,
     "gender": "female",
-    "imgUrl": null
+    "imgUrl": null,
+    "telecom": "yes"
   },
   {
     "id": 5,
@@ -52,7 +56,8 @@
     "SubSpecializationId": null,
     "HospitalId": 1,
     "gender": "female",
-    "imgUrl": null
+    "imgUrl": null,
+    "telecom": "yes"
   },
   {
     "id": 6,
@@ -63,7 +68,8 @@
     "SubSpecializationId": null,
     "HospitalId": 1,
     "gender": "female",
-    "imgUrl": null
+    "imgUrl": null,
+    "telecom": "yes"
   },
   {
     "id": 7,
@@ -74,7 +80,8 @@
     "SubSpecializationId": null,
     "HospitalId": 1,
     "gender": "female",
-    "imgUrl": null
+    "imgUrl": null,
+    "telecom": "yes"
   },
   {
     "id": 8,
@@ -85,7 +92,8 @@
     "SubSpecializationId": null,
     "HospitalId": 1,
     "gender": "female",
-    "imgUrl": null
+    "imgUrl": null,
+    "telecom": "yes"
   },
   {
     "id": 9,
@@ -96,7 +104,8 @@
     "SubSpecializationId": null,
     "HospitalId": 1,
     "gender": "male",
-    "imgUrl": null
+    "imgUrl": null,
+    "telecom": "yes"
   },
   {
     "id": 10,
@@ -107,7 +116,8 @@
     "SubSpecializationId": null,
     "HospitalId": 1,
     "gender": "male",
-    "imgUrl": null
+    "imgUrl": null,
+    "telecom": "yes"
   },
   {
     "id": 11,
@@ -118,7 +128,8 @@
     "SubSpecializationId": null,
     "HospitalId": 1,
     "gender": "male",
-    "imgUrl": null
+    "imgUrl": null,
+    "telecom": "yes"
   },
   {
     "id": 12,
@@ -129,7 +140,8 @@
     "SubSpecializationId": null,
     "HospitalId": 1,
     "gender": "male",
-    "imgUrl": null
+    "imgUrl": null,
+    "telecom": "yes"
   },
   {
     "id": 13,
@@ -140,7 +152,8 @@
     "SubSpecializationId": null,
     "HospitalId": 1,
     "gender": "female",
-    "imgUrl": null
+    "imgUrl": null,
+    "telecom": "yes"
   },
   {
     "id": 14,
@@ -151,7 +164,8 @@
     "SubSpecializationId": null,
     "HospitalId": 1,
     "gender": "female",
-    "imgUrl": null
+    "imgUrl": null,
+    "telecom": "yes"
   },
   {
     "id": 15,
@@ -162,7 +176,8 @@
     "SubSpecializationId": null,
     "HospitalId": 2,
     "gender": "female",
-    "imgUrl": null
+    "imgUrl": null,
+    "telecom": "yes"
   },
   {
     "id": 16,
@@ -173,7 +188,8 @@
     "SubSpecializationId": null,
     "HospitalId": 2,
     "gender": "female",
-    "imgUrl": null
+    "imgUrl": null,
+    "telecom": "yes"
   },
   {
     "id": 17,
@@ -184,7 +200,8 @@
     "SubSpecializationId": null,
     "HospitalId": 2,
     "gender": "male",
-    "imgUrl": null
+    "imgUrl": null,
+    "telecom": "yes"
   },
   {
     "id": 18,
@@ -195,7 +212,8 @@
     "SubSpecializationId": null,
     "HospitalId": 2,
     "gender": "female",
-    "imgUrl": null
+    "imgUrl": null,
+    "telecom": "yes"
   },
   {
     "id": 19,
@@ -206,7 +224,8 @@
     "SubSpecializationId": null,
     "HospitalId": 2,
     "gender": "female",
-    "imgUrl": null
+    "imgUrl": null,
+    "telecom": "yes"
   },
   {
     "id": 20,
@@ -217,7 +236,8 @@
     "SubSpecializationId": null,
     "HospitalId": 2,
     "gender": "female",
-    "imgUrl": null
+    "imgUrl": null,
+    "telecom": "yes"
   },
   {
     "id": 21,
@@ -228,6 +248,7 @@
     "SubSpecializationId": null,
     "HospitalId": 2,
     "gender": "male",
-    "imgUrl": null
+    "imgUrl": null,
+    "telecom": "yes"
   }
 ]
