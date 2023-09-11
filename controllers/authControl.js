@@ -28,6 +28,7 @@ class authController {
     try {
       const { phoneNumber, password } = req.body;
 
+      console.log(req.body);
       const user = await User.findOne({
         where: {
           phoneNumber,

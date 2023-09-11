@@ -14,7 +14,11 @@ const { Op } = require("sequelize");
 class hospitalController {
   static async getHospitals(req, res, next) {
     try {
-      const hospitals = await Hospital.findAll({});
+      const hospitals = await Hospital.findAll({
+        attributes: {
+          exclude: ["id", "createdAt", "updatedAt"],
+        },
+      });
       res.status(200).json(hospitals);
     } catch (error) {
       next(error);
@@ -60,47 +64,60 @@ class hospitalController {
       next(error);
     }
   }
-  static async getSearchDoctorbySpecialization(req, res, next) {
+  static async getSearchDoctor(req, res, next) {
     try {
       const { hospitalId } = req.params;
       const { keyword } = req.query;
 
-      if (!keyword) {
-        const doctors = await Doctor.findAll({
-          where: {
-            HospitalId: hospitalId,
+      // console.log("masuk", keyword);
+      let whereCondition = {
+        HospitalId: hospitalId,
+        [Op.or]: [
+          {
+            fristName: {
+              [Op.iLike]: `%${keyword}%`,
+            },
           },
-          attributes: {
-            exclude: ["createdAt", "updatedAt"],
+          {
+            lastName: {
+              [Op.iLike]: `%${keyword}%`,
+            },
           },
-          include: [
-            {
-              model: Specialization,
-              attributes: {
-                exclude: ["createdAt", "updatedAt"],
+        ],
+      };
+
+      const doctorsByName = await Doctor.findAll({
+        where: whereCondition,
+        attributes: ["fristName", "lastName", "title", "telecom"],
+        include: [
+          {
+            model: Specialization,
+            attributes: ["name"],
+          },
+        ],
+      });
+
+      const doctorBySpecialization = await Doctor.findAll({
+        where: {
+          HospitalId: hospitalId,
+        },
+        attributes: ["fristName", "lastName", "title", "telecom"],
+        include: [
+          {
+            model: Specialization,
+            attributes: ["name"],
+            where: {
+              name: {
+                [Op.iLike]: `%${keyword}%`,
               },
             },
-          ],
-        });
-        res.status(200).json(doctors);
-      } else {
-        const doctors = await Doctor.findAll({
-          where: {
-            HospitalId: hospitalId,
           },
-          include: [
-            {
-              model: Specialization,
-              where: {
-                name: {
-                  [Op.iLike]: `%${keyword}%`,
-                },
-              },
-            },
-          ],
-        });
-        res.status(200).json(doctors);
-      }
+        ],
+      });
+
+      const data = [...doctorsByName, ...doctorBySpecialization];
+
+      res.status(200).json(data);
     } catch (error) {
       console.log(error);
       next(error);
@@ -115,21 +132,15 @@ class hospitalController {
           HospitalId: hospitalId,
           SpecializationId: specializationId,
         },
-        attributes: {
-          exclude: [
-            "createdAt",
-            "updatedAt",
-            "HospitalId",
-            "SubSpecializationId",
-            "SpecializationId",
-          ],
-        },
+        attributes: ["fristName", "lastName", "title", "telecom"],
         include: [
           {
             model: Specialization,
-            attributes: {
-              exclude: ["createdAt", "updatedAt", "HospitalId", "id"],
-            },
+            attributes: ["name"],
+          },
+          {
+            model: SubSpecialization,
+            attributes: ["name"],
           },
         ],
       });
@@ -199,12 +210,15 @@ class hospitalController {
       const includeCondition = [
         {
           model: Specialization,
+          attributes: ["name"],
         },
         {
           model: SubSpecialization,
+          attributes: ["name"],
         },
         {
           model: WorkingDay,
+          attributes: ["id"],
         },
       ];
 
@@ -260,10 +274,17 @@ class hospitalController {
 
       const doctors = await Doctor.findAll({
         where: whereCondition,
+        attributes: ["fristName", "lastName", "title", "telecom"],
         include: includeCondition,
       });
 
-      res.status(200).json(doctors);
+      const doctorsWithoutWorkingDays = doctors.map((doctor) => {
+        delete doctor.dataValues.WorkingDays;
+
+        return doctor;
+      });
+
+      res.status(200).json(doctorsWithoutWorkingDays);
     } catch (error) {
       console.log(error);
       next(error);

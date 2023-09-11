@@ -7,10 +7,7 @@ router.get(
   "/:hospitalId/specializations",
   hospitalController.getSearchSpecializations
 );
-router.get(
-  "/:hospitalId/doctors",
-  hospitalController.getSearchDoctorbySpecialization
-);
+router.get("/:hospitalId/doctors", hospitalController.getSearchDoctor);
 
 router.get(
   "/:hospitalId/specializations/:specializationId/doctors",

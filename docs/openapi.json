@@ -1,0 +1,1907 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Care Dokter - OpenAPI 3.0",
+    "description": "\nThis is a sample Care Dokter aplication by Mandaya Group mock up OpenAPI 3.0 specification by Dheo Abdillah as needed for the job application to Mandaya Group\n\nSome useful links:\n- [Care Dokter Backend Mockup Repository by Dheo Abdillah](https://github.com/dheoab/care_dokter)",
+    "contact": {
+      "email": "dheo.abdillah@gmail.com"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    },
+    "version": "1.0.11"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000"
+    }
+  ],
+  "paths": {
+    "/api/auth/login": {
+      "post": {
+        "tags": ["default"],
+        "summary": "http://localhost:3000/api/auth/login",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/auth_login_body"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {
+              "X-Powered-By": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "Express"
+                }
+              },
+              "Access-Control-Allow-Origin": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "*"
+                }
+              },
+              "Content-Type": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "application/json; charset=utf-8"
+                }
+              },
+              "Content-Length": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "integer",
+                  "example": 204
+                }
+              },
+              "ETag": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "W/\"cc-8ZXdrXALNm54xPIHq6kFa4/htQ8\""
+                }
+              },
+              "Date": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "Mon, 11 Sep 2023 02:15:22 GMT"
+                }
+              },
+              "Connection": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "keep-alive"
+                }
+              },
+              "Keep-Alive": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "timeout=5"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                },
+                "example": {
+                  "statusCode": 200,
+                  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiIxMjNAZXhhbXBsZS5jb20iLCJpYXQiOjE2OTQzOTg1MjJ9._vOH6hv-R8f2WbbLHpPTa4nGn7u8A-UTLPmCy0sTpio",
+                  "username": "user1"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/auth/register": {
+      "post": {
+        "tags": ["default"],
+        "summary": "http://localhost:3000/api/auth/register",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/auth_register_body"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created",
+            "headers": {
+              "X-Powered-By": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "Express"
+                }
+              },
+              "Access-Control-Allow-Origin": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "*"
+                }
+              },
+              "Content-Type": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "application/json; charset=utf-8"
+                }
+              },
+              "Content-Length": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "integer",
+                  "example": 51
+                }
+              },
+              "ETag": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "W/\"33-RaLDLcLH2BjjRh2jVke4Y/xkuKE\""
+                }
+              },
+              "Date": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "Mon, 11 Sep 2023 02:15:28 GMT"
+                }
+              },
+              "Connection": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "keep-alive"
+                }
+              },
+              "Keep-Alive": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "timeout=5"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                },
+                "example": {
+                  "statusCode": 201,
+                  "id": 2,
+                  "email": "456@example.com"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/hospitals/": {
+      "get": {
+        "tags": ["default"],
+        "summary": "http://localhost:3000/api/hospitals/",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {
+              "X-Powered-By": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "Express"
+                }
+              },
+              "Access-Control-Allow-Origin": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "*"
+                }
+              },
+              "Content-Type": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "application/json; charset=utf-8"
+                }
+              },
+              "Content-Length": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "integer",
+                  "example": 408
+                }
+              },
+              "ETag": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "W/\"198-9ambh0GmI/dsRw9NR2rOIEAVLHs\""
+                }
+              },
+              "Date": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "Mon, 11 Sep 2023 02:15:03 GMT"
+                }
+              },
+              "Connection": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "keep-alive"
+                }
+              },
+              "Keep-Alive": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "timeout=5"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                },
+                "example": [
+                  {
+                    "name": "Mandaya Royal Hospital Puri",
+                    "location": "Jl. Metland Boulevard Lot. C-3 Metland Cyber City Puri, RT.001/RW.002, Parung Jaya, Kec. Karang Tengah, Kota Tangerang, Banten 15159",
+                    "phoneNumber": "6281119002000"
+                  },
+                  {
+                    "name": "Mandaya Hospital Karawang",
+                    "location": "Jl. Arteri Tol Karawang Barat, Teluk Jambe, Sukamakmur, Telukjambe Timur, Kabupaten Karawang, Jawa Barat, 41361",
+                    "phoneNumber": "6281113402085"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/hospitals/1/specializations": {
+      "get": {
+        "tags": ["default"],
+        "summary": "http://localhost:3000/api/hospitals/1/specializations?keyword",
+        "parameters": [
+          {
+            "name": "keyword",
+            "in": "query",
+            "required": false,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {
+              "X-Powered-By": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "Express"
+                }
+              },
+              "Access-Control-Allow-Origin": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "*"
+                }
+              },
+              "Content-Type": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "application/json; charset=utf-8"
+                }
+              },
+              "Content-Length": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "integer",
+                  "example": 77
+                }
+              },
+              "ETag": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "W/\"4d-EenEZVVkEuOP6Nje8ze3HTsZwoI\""
+                }
+              },
+              "Date": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "Mon, 11 Sep 2023 02:17:17 GMT"
+                }
+              },
+              "Connection": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "keep-alive"
+                }
+              },
+              "Keep-Alive": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "timeout=5"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                },
+                "example": [
+                  {
+                    "id": 1,
+                    "name": "Anak",
+                    "HospitalId": 1
+                  },
+                  {
+                    "id": 2,
+                    "name": "Mata",
+                    "HospitalId": 1
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/hospitals/1/doctors": {
+      "get": {
+        "tags": ["default"],
+        "summary": "http://localhost:3000/api/hospitals/1/doctors?keyword",
+        "parameters": [
+          {
+            "name": "keyword",
+            "in": "query",
+            "required": false,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "ma"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {
+              "X-Powered-By": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "Express"
+                }
+              },
+              "Access-Control-Allow-Origin": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "*"
+                }
+              },
+              "Content-Type": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "application/json; charset=utf-8"
+                }
+              },
+              "Content-Length": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "integer",
+                  "example": 592
+                }
+              },
+              "ETag": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "W/\"250-F/3mXjmjah3PjadKwdToqOxU5dA\""
+                }
+              },
+              "Date": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "Mon, 11 Sep 2023 02:15:45 GMT"
+                }
+              },
+              "Connection": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "keep-alive"
+                }
+              },
+              "Keep-Alive": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "timeout=5"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                },
+                "example": [
+                  {
+                    "fristName": "dr. Hardini",
+                    "lastName": "Intan Setiawati Mahdi",
+                    "title": "Sp. A (K)",
+                    "telecom": "yes",
+                    "Specialization": {
+                      "name": "Anak"
+                    }
+                  },
+                  {
+                    "fristName": "dr. Tiurma Lisapine",
+                    "lastName": "Sugoro",
+                    "title": "Sp. A, MSc",
+                    "telecom": "yes",
+                    "Specialization": {
+                      "name": "Anak"
+                    }
+                  },
+                  {
+                    "fristName": "dr. Josiah",
+                    "lastName": "Irma",
+                    "title": "Sp. M",
+                    "telecom": "yes",
+                    "Specialization": {
+                      "name": "Mata"
+                    }
+                  },
+                  {
+                    "fristName": "dr. Josiah",
+                    "lastName": "Irma",
+                    "title": "Sp. M",
+                    "telecom": "yes",
+                    "Specialization": {
+                      "name": "Mata"
+                    }
+                  },
+                  {
+                    "fristName": "dr. Naomi",
+                    "lastName": "Patioran",
+                    "title": "Sp. M",
+                    "telecom": "yes",
+                    "Specialization": {
+                      "name": "Mata"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/hospitals/1/specializations/1/doctors": {
+      "get": {
+        "tags": ["default"],
+        "summary": "http://localhost:3000/api/hospitals/1/specializations/1/doctors",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {
+              "X-Powered-By": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "Express"
+                }
+              },
+              "Access-Control-Allow-Origin": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "*"
+                }
+              },
+              "Content-Type": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "application/json; charset=utf-8"
+                }
+              },
+              "Content-Length": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "integer",
+                  "example": 1784
+                }
+              },
+              "ETag": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "W/\"6f8-r9eT7fWenJGVrbvRmqX8AzsYW24\""
+                }
+              },
+              "Date": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "Mon, 11 Sep 2023 02:17:27 GMT"
+                }
+              },
+              "Connection": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "keep-alive"
+                }
+              },
+              "Keep-Alive": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "timeout=5"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                },
+                "example": [
+                  {
+                    "fristName": "dr. Andy",
+                    "lastName": "Sugoro",
+                    "title": "Sp. A",
+                    "telecom": "yes",
+                    "Specialization": {
+                      "name": "Anak"
+                    }
+                  },
+                  {
+                    "fristName": "dr. Diana",
+                    "lastName": "Chandra",
+                    "title": "Sp. A",
+                    "telecom": "yes",
+                    "Specialization": {
+                      "name": "Anak"
+                    }
+                  },
+                  {
+                    "fristName": "dr. Edward",
+                    "lastName": "Surjono",
+                    "title": "Sp. A",
+                    "telecom": "yes",
+                    "Specialization": {
+                      "name": "Anak"
+                    }
+                  },
+                  {
+                    "fristName": "dr. Fransisca",
+                    "lastName": "Handy Agung",
+                    "title": "Sp. A, IBCLC",
+                    "telecom": "yes",
+                    "Specialization": {
+                      "name": "Anak"
+                    }
+                  },
+                  {
+                    "fristName": "dr. Hardini",
+                    "lastName": "Intan Setiawati Mahdi",
+                    "title": "Sp. A (K)",
+                    "telecom": "yes",
+                    "Specialization": {
+                      "name": "Anak"
+                    },
+                    "SubSpecialization": {
+                      "name": "sub. penyakit darah & onkologi"
+                    }
+                  },
+                  {
+                    "fristName": "dr. Herlina",
+                    "title": "Sp. A",
+                    "telecom": "yes",
+                    "Specialization": {
+                      "name": "Anak"
+                    }
+                  },
+                  {
+                    "fristName": "dr. Irene",
+                    "lastName": "Melinda Louis",
+                    "title": "Sp. A (NON VAKSINASI)",
+                    "telecom": "yes",
+                    "Specialization": {
+                      "name": "Anak"
+                    }
+                  },
+                  {
+                    "fristName": "dr. Irene",
+                    "lastName": "Melinda Louis",
+                    "title": "Sp. A (VAKSINASI)",
+                    "telecom": "yes",
+                    "Specialization": {
+                      "name": "Anak"
+                    }
+                  },
+                  {
+                    "fristName": "dr. Suryadi",
+                    "lastName": "Susanto",
+                    "title": "Sp. A",
+                    "telecom": "yes",
+                    "Specialization": {
+                      "name": "Anak"
+                    }
+                  },
+                  {
+                    "fristName": "dr. Tiurma Lisapine",
+                    "lastName": "Sugoro",
+                    "title": "Sp. A, MSc",
+                    "telecom": "yes",
+                    "Specialization": {
+                      "name": "Anak"
+                    }
+                  },
+                  {
+                    "fristName": "dr. Yose",
+                    "lastName": "Muliawan Pangestu",
+                    "title": "Sp. A",
+                    "telecom": "yes",
+                    "Specialization": {
+                      "name": "Anak"
+                    }
+                  },
+                  {
+                    "fristName": "dr. Yuliatmoko",
+                    "lastName": "Suryatin",
+                    "title": "Sp. A",
+                    "telecom": "yes",
+                    "Specialization": {
+                      "name": "Anak"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/hospitals/1/specializations/1/doctors/1/working-day": {
+      "get": {
+        "tags": ["default"],
+        "summary": "http://localhost:3000/api/hospitals/1/specializations/1/doctor/1/working-day",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {
+              "X-Powered-By": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "Express"
+                }
+              },
+              "Access-Control-Allow-Origin": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "*"
+                }
+              },
+              "Content-Type": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "application/json; charset=utf-8"
+                }
+              },
+              "Content-Length": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "integer",
+                  "example": 441
+                }
+              },
+              "ETag": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "W/\"1b9-zF28Ir9vZ36W/UcnFudsiGP8U7U\""
+                }
+              },
+              "Date": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "Mon, 11 Sep 2023 02:17:40 GMT"
+                }
+              },
+              "Connection": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "keep-alive"
+                }
+              },
+              "Keep-Alive": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "timeout=5"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                },
+                "example": [
+                  {
+                    "day": "Monday",
+                    "practiceDuration": "00:30:00",
+                    "shift1": "10:00 - 13:00"
+                  },
+                  {
+                    "day": "Tuesday",
+                    "practiceDuration": "00:30:00",
+                    "shift1": "10:00 - 13:00"
+                  },
+                  {
+                    "day": "Wednesday",
+                    "practiceDuration": "00:30:00",
+                    "shift1": "10:00 - 13:00"
+                  },
+                  {
+                    "day": "Thursday",
+                    "practiceDuration": "00:30:00",
+                    "shift1": "10:00 - 13:00"
+                  },
+                  {
+                    "day": "Friday",
+                    "practiceDuration": "00:30:00",
+                    "shift1": "10:00 - 13:00"
+                  },
+                  {
+                    "day": "Saturday",
+                    "practiceDuration": "00:30:00",
+                    "shift1": "10:00 - 13:00"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/hospitals/1/specializations/1/filter-doctors/": {
+      "get": {
+        "tags": ["default"],
+        "summary": "http://localhost:3000/api/hospitals/1/specializations/1/filter-doctors/?telecomunication=yes",
+        "parameters": [
+          {
+            "name": "subspecializationId",
+            "in": "query",
+            "required": false,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": "1"
+          },
+          {
+            "name": "practiceDay",
+            "in": "query",
+            "required": false,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "Saturday"
+          },
+          {
+            "name": "gender",
+            "in": "query",
+            "required": false,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "female"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {
+              "X-Powered-By": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "Express"
+                }
+              },
+              "Access-Control-Allow-Origin": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "*"
+                }
+              },
+              "Content-Type": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "application/json; charset=utf-8"
+                }
+              },
+              "Content-Length": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "integer",
+                  "example": 195
+                }
+              },
+              "ETag": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "W/\"c3-V/gs9k9OQGinkX7QETtNVOwzkT4\""
+                }
+              },
+              "Date": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "Mon, 11 Sep 2023 02:18:01 GMT"
+                }
+              },
+              "Connection": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "keep-alive"
+                }
+              },
+              "Keep-Alive": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "timeout=5"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                },
+                "example": [
+                  {
+                    "fristName": "dr. Hardini",
+                    "lastName": "Intan Setiawati Mahdi",
+                    "title": "Sp. A (K)",
+                    "telecom": "yes",
+                    "Specialization": {
+                      "name": "Anak"
+                    },
+                    "SubSpecialization": {
+                      "name": "sub. penyakit darah & onkologi"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/hospitals/1/specializations/1/doctors/2": {
+      "get": {
+        "tags": ["default"],
+        "summary": "http://localhost:3000/api/hospitals/1/specializations/1/doctors/2",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {
+              "X-Powered-By": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "Express"
+                }
+              },
+              "Access-Control-Allow-Origin": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "*"
+                }
+              },
+              "Content-Type": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "application/json; charset=utf-8"
+                }
+              },
+              "Content-Length": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "integer",
+                  "example": 260
+                }
+              },
+              "ETag": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "W/\"104-Xm6RSBMiMUu6Oa7dS1DxPqa0Z6Y\""
+                }
+              },
+              "Date": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "Mon, 11 Sep 2023 02:18:17 GMT"
+                }
+              },
+              "Connection": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "keep-alive"
+                }
+              },
+              "Keep-Alive": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "timeout=5"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                },
+                "example": [
+                  {
+                    "id": 2,
+                    "fristName": "dr. Diana",
+                    "lastName": "Chandra",
+                    "title": "Sp. A",
+                    "SpecializationId": 1,
+                    "HospitalId": 1,
+                    "gender": "female",
+                    "telecom": "yes",
+                    "createdAt": "2023-09-11T01:20:53.113Z",
+                    "updatedAt": "2023-09-11T01:20:53.113Z"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/hospitals/1/specializations/1/doctors/7/schedules": {
+      "get": {
+        "tags": ["default"],
+        "summary": "http://localhost:3000/api/hospitals/1/specializations/1/doctors/7/schedules?startDate=2023-09-13&endDate=2023-09-30",
+        "parameters": [
+          {
+            "name": "startDate",
+            "in": "query",
+            "required": false,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "2023-09-13"
+          },
+          {
+            "name": "endDate",
+            "in": "query",
+            "required": false,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "2023-09-30"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {
+              "X-Powered-By": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "Express"
+                }
+              },
+              "Access-Control-Allow-Origin": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "*"
+                }
+              },
+              "Content-Type": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "application/json; charset=utf-8"
+                }
+              },
+              "Content-Length": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "integer",
+                  "example": 1843
+                }
+              },
+              "ETag": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "W/\"733-xvjBMDKkZY66MLW5/O2RTX3IQfA\""
+                }
+              },
+              "Date": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "Mon, 11 Sep 2023 02:18:26 GMT"
+                }
+              },
+              "Connection": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "keep-alive"
+                }
+              },
+              "Keep-Alive": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "timeout=5"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                },
+                "example": [
+                  {
+                    "day": "Thursday",
+                    "date": "2023-09-14",
+                    "practiceDuration": "00:10:00",
+                    "shift1": {
+                      "time": "11:00 - 11:40",
+                      "schedule": ["11:00", "11:10", "11:20", "11:30"]
+                    },
+                    "shift2": {
+                      "time": "12:20 - 13:00",
+                      "schedule": ["12:20", "12:30", "12:40", "12:50"]
+                    },
+                    "shift3": {
+                      "time": "13:40 - 14:20",
+                      "schedule": ["13:40", "13:50", "14:00", "14:10"]
+                    },
+                    "shift4": {
+                      "time": "15:00 - 15:40",
+                      "schedule": ["15:00", "15:10", "15:20", "15:30"]
+                    },
+                    "shift5": {
+                      "time": "16:20 - 17:00",
+                      "schedule": ["16:20", "16:30", "16:40", "16:50"]
+                    }
+                  },
+                  {
+                    "day": "Monday",
+                    "date": "2023-09-18",
+                    "practiceDuration": "00:10:00",
+                    "shift1": {
+                      "time": "18:00 - 18:40",
+                      "schedule": ["18:00", "18:10", "18:20", "18:30"]
+                    },
+                    "shift2": {
+                      "time": "19:20 - 20:00",
+                      "schedule": ["19:20", "19:30", "19:40", "19:50"]
+                    }
+                  },
+                  {
+                    "day": "Thursday",
+                    "date": "2023-09-21",
+                    "practiceDuration": "00:10:00",
+                    "shift1": {
+                      "time": "11:00 - 11:40",
+                      "schedule": ["11:00", "11:10", "11:20", "11:30"]
+                    },
+                    "shift2": {
+                      "time": "12:20 - 13:00",
+                      "schedule": ["12:20", "12:30", "12:40", "12:50"]
+                    },
+                    "shift3": {
+                      "time": "13:40 - 14:20",
+                      "schedule": ["13:40", "13:50", "14:00", "14:10"]
+                    },
+                    "shift4": {
+                      "time": "15:00 - 15:40",
+                      "schedule": ["15:00", "15:10", "15:20", "15:30"]
+                    },
+                    "shift5": {
+                      "time": "16:20 - 17:00",
+                      "schedule": ["16:20", "16:30", "16:40", "16:50"]
+                    }
+                  },
+                  {
+                    "day": "Monday",
+                    "date": "2023-09-25",
+                    "practiceDuration": "00:10:00",
+                    "shift1": {
+                      "time": "18:00 - 18:40",
+                      "schedule": ["18:00", "18:10", "18:20", "18:30"]
+                    },
+                    "shift2": {
+                      "time": "19:20 - 20:00",
+                      "schedule": ["19:20", "19:30", "19:40", "19:50"]
+                    }
+                  },
+                  {
+                    "day": "Thursday",
+                    "date": "2023-09-28",
+                    "practiceDuration": "00:10:00",
+                    "shift1": {
+                      "time": "11:00 - 11:40",
+                      "schedule": ["11:00", "11:10", "11:20", "11:30"]
+                    },
+                    "shift2": {
+                      "time": "12:20 - 13:00",
+                      "schedule": ["12:20", "12:30", "12:40", "12:50"]
+                    },
+                    "shift3": {
+                      "time": "13:40 - 14:20",
+                      "schedule": ["13:40", "13:50", "14:00", "14:10"]
+                    },
+                    "shift4": {
+                      "time": "15:00 - 15:40",
+                      "schedule": ["15:00", "15:10", "15:20", "15:30"]
+                    },
+                    "shift5": {
+                      "time": "16:20 - 17:00",
+                      "schedule": ["16:20", "16:30", "16:40", "16:50"]
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/users/points": {
+      "get": {
+        "tags": ["default"],
+        "summary": "http://localhost:3000/api/users/points",
+        "parameters": [
+          {
+            "name": "access_token",
+            "in": "header",
+            "required": false,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiIxMjNAZXhhbXBsZS5jb20iLCJpYXQiOjE2OTQzNTk3NzR9.XivJzzjppvbphK0IlG7TCTj224PojwpAYW7nSwZDVhk"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {
+              "X-Powered-By": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "Express"
+                }
+              },
+              "Access-Control-Allow-Origin": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "*"
+                }
+              },
+              "Content-Type": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "application/json; charset=utf-8"
+                }
+              },
+              "Content-Length": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "integer",
+                  "example": 22
+                }
+              },
+              "ETag": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "W/\"16-Z1gNioskn3D8IFaGOgfGhsYlODs\""
+                }
+              },
+              "Date": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "Mon, 11 Sep 2023 02:19:28 GMT"
+                }
+              },
+              "Connection": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "keep-alive"
+                }
+              },
+              "Keep-Alive": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "timeout=5"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                },
+                "example": {
+                  "id": 1,
+                  "userPoint": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/users/family-members": {
+      "get": {
+        "tags": ["default"],
+        "summary": "http://localhost:3000/api/users/family-members",
+        "parameters": [
+          {
+            "name": "access_token",
+            "in": "header",
+            "required": false,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiIxMjNAZXhhbXBsZS5jb20iLCJpYXQiOjE2OTQzNTk3NzR9.XivJzzjppvbphK0IlG7TCTj224PojwpAYW7nSwZDVhk"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {
+              "X-Powered-By": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "Express"
+                }
+              },
+              "Access-Control-Allow-Origin": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "*"
+                }
+              },
+              "Content-Type": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "application/json; charset=utf-8"
+                }
+              },
+              "Content-Length": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "integer",
+                  "example": 12
+                }
+              },
+              "ETag": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "W/\"c-feKqZ95ilLhhpGrycqhJcSeYlfE\""
+                }
+              },
+              "Date": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "Mon, 11 Sep 2023 02:19:36 GMT"
+                }
+              },
+              "Connection": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "keep-alive"
+                }
+              },
+              "Keep-Alive": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "timeout=5"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                },
+                "example": ["Abi Bibi"]
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/users/1/on-going-bookings": {
+      "get": {
+        "tags": ["default"],
+        "summary": "http://localhost:3000/api/users/1/on-going-bookings",
+        "parameters": [
+          {
+            "name": "access_token",
+            "in": "header",
+            "required": false,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiIxMjNAZXhhbXBsZS5jb20iLCJpYXQiOjE2OTQzNTk3NzR9.XivJzzjppvbphK0IlG7TCTj224PojwpAYW7nSwZDVhk"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {
+              "X-Powered-By": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "Express"
+                }
+              },
+              "Access-Control-Allow-Origin": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "*"
+                }
+              },
+              "Content-Type": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "application/json; charset=utf-8"
+                }
+              },
+              "Content-Length": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "integer",
+                  "example": 205
+                }
+              },
+              "ETag": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "W/\"cd-HFKgWoGhfpVliTSV8fVZUQFAAGU\""
+                }
+              },
+              "Date": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "Mon, 11 Sep 2023 02:19:43 GMT"
+                }
+              },
+              "Connection": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "keep-alive"
+                }
+              },
+              "Keep-Alive": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "timeout=5"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                },
+                "example": [
+                  {
+                    "status": "on-going",
+                    "dateBooked": "2023-09-11T10:30:00.000Z",
+                    "WorkingDay": {
+                      "id": 1,
+                      "Doctor": {
+                        "fristName": "dr. Andy",
+                        "lastName": "Sugoro",
+                        "title": "Sp. A",
+                        "Hospital": {
+                          "name": "Mandaya Royal Hospital Puri"
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/users/1/done-bookings": {
+      "get": {
+        "tags": ["default"],
+        "summary": "http://localhost:3000/api/users/1/done-bookings",
+        "parameters": [
+          {
+            "name": "access_token",
+            "in": "header",
+            "required": false,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiIxMjNAZXhhbXBsZS5jb20iLCJpYXQiOjE2OTQzNTk3NzR9.XivJzzjppvbphK0IlG7TCTj224PojwpAYW7nSwZDVhk"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {
+              "X-Powered-By": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "Express"
+                }
+              },
+              "Access-Control-Allow-Origin": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "*"
+                }
+              },
+              "Content-Type": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "application/json; charset=utf-8"
+                }
+              },
+              "Content-Length": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "integer",
+                  "example": 201
+                }
+              },
+              "ETag": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "W/\"c9-M7ZZO669GBwGgikz9QrrIUHjpgc\""
+                }
+              },
+              "Date": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "Mon, 11 Sep 2023 02:19:52 GMT"
+                }
+              },
+              "Connection": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "keep-alive"
+                }
+              },
+              "Keep-Alive": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "timeout=5"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                },
+                "example": [
+                  {
+                    "status": "done",
+                    "dateBooked": "2023-09-17T10:30:00.000Z",
+                    "WorkingDay": {
+                      "id": 1,
+                      "Doctor": {
+                        "fristName": "dr. Andy",
+                        "lastName": "Sugoro",
+                        "title": "Sp. A",
+                        "Hospital": {
+                          "name": "Mandaya Royal Hospital Puri"
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/users/1/booking/1": {
+      "get": {
+        "tags": ["default"],
+        "summary": "http://localhost:3000/api/users/1/booking/1",
+        "parameters": [
+          {
+            "name": "access_token",
+            "in": "header",
+            "required": false,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiIxMjNAZXhhbXBsZS5jb20iLCJpYXQiOjE2OTQzNTk3NzR9.XivJzzjppvbphK0IlG7TCTj224PojwpAYW7nSwZDVhk"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {
+              "X-Powered-By": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "Express"
+                }
+              },
+              "Access-Control-Allow-Origin": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "*"
+                }
+              },
+              "Content-Type": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "application/json; charset=utf-8"
+                }
+              },
+              "Content-Length": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "integer",
+                  "example": 384
+                }
+              },
+              "ETag": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "W/\"180-ZPD1ZhlJhAts9U9eO+1/yZ8WynU\""
+                }
+              },
+              "Date": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "Mon, 11 Sep 2023 02:20:01 GMT"
+                }
+              },
+              "Connection": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "keep-alive"
+                }
+              },
+              "Keep-Alive": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "timeout=5"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                },
+                "example": {
+                  "status": "on-going",
+                  "dateBooked": "2023-09-11T10:30:00.000Z",
+                  "bookingCode": 4170000,
+                  "UsersFamily": {
+                    "frontName": "Abi",
+                    "lastName": "Bibi",
+                    "User": {
+                      "email": "123@example.com",
+                      "phoneNumber": "0888888888"
+                    }
+                  },
+                  "WorkingDay": {
+                    "id": 1,
+                    "Doctor": {
+                      "fristName": "dr. Andy",
+                      "lastName": "Sugoro",
+                      "title": "Sp. A",
+                      "Hospital": {
+                        "name": "Mandaya Royal Hospital Puri"
+                      },
+                      "Specialization": {
+                        "name": "Anak"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "auth_login_body": {
+        "properties": {
+          "phoneNumber": {
+            "type": "string",
+            "example": "0888888888"
+          },
+          "password": {
+            "type": "string",
+            "example": "12345"
+          }
+        }
+      },
+      "auth_register_body": {
+        "properties": {
+          "phoneNumber": {
+            "type": "string",
+            "example": "08888888888"
+          },
+          "email": {
+            "type": "string",
+            "example": "456@example.com"
+          },
+          "username": {
+            "type": "string",
+            "example": "user1"
+          },
+          "password": {
+            "type": "string",
+            "example": "12345"
+          }
+        }
+      }
+    }
+  }
+}

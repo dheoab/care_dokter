@@ -53,7 +53,7 @@
     "fristName": "dr. Hardini",
     "lastName": "Intan Setiawati Mahdi",
     "title": "Sp. A (K)",
-    "SubSpecializationId": null,
+    "SubSpecializationId": 1,
     "HospitalId": 1,
     "gender": "female",
     "imgUrl": null,
